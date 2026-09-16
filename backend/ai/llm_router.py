@@ -1,14 +1,14 @@
 class LLMRouter:
 
-    def select(self, task):
-
-        if task == "chat":
-            return "Gemini"
-
-        if task == "offline":
-            return "Llama3"
-
-        if task == "coding":
+    def select(self, task: str) -> str:
+        if task in {
+            "chat",
+            "coding",
+            "vision",
+            "voice",
+            "system",
+            "security",
+        }:
             return "Gemini"
 
         return "Gemini"

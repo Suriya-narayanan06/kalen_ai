@@ -7,10 +7,11 @@ from backend.api.creator import router as creator_router
 from backend.api.osint import router as osint_router
 from backend.api.smart_call import router as smart_call_router
 from backend.api.system import router as system_router
+from backend.auth.auth import router as auth_router
 
 app = FastAPI(
     title="KALEN AI",
-    version="2.0"
+    version="2.0",
 )
 
 app.include_router(chat_router)
@@ -20,11 +21,23 @@ app.include_router(creator_router)
 app.include_router(osint_router)
 app.include_router(smart_call_router)
 app.include_router(system_router)
+app.include_router(auth_router)
+
 
 @app.get("/")
-def root():
+async def root():
     return {
-        "AI": "KALEN",
-        "Status": "ONLINE",
-        "Version": "2.0"
+        "ai": "KALEN",
+        "status": "ONLINE",
+        "version": "2.0",
+        "service": "KALEN AI Backend",
+    }
+
+
+@app.get("/health")
+async def health():
+    return {
+        "status": "ok",
+        "ai": "KALEN",
+        "version": "2.0",
     }

@@ -1,2 +1,8 @@
-uvicorn 
-fastApi
+fastapi
+uvicorn
+httpx
+pydantic
+python-multipart
+google-genai
+
+python-dotenv

@@ -1,23 +1,21 @@
 class ModelRegistry:
 
     MODELS = {
-
+        "DeepSeek": {
+            "type": "cloud",
+        },
         "Gemini": {
-            "type": "cloud"
+            "type": "cloud",
         },
-
         "Llama3": {
-            "type": "local"
+            "type": "local",
         },
-
         "Mistral": {
-            "type": "local"
+            "type": "local",
         },
-
         "GPT4All": {
-            "type": "local"
-        }
-
+            "type": "local",
+        },
     }
 
     @classmethod

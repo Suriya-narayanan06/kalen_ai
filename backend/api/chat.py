@@ -1,18 +1,24 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
 
+from core.ai_core import KalenCore
+
+
 router = APIRouter(
     prefix="/chat",
     tags=["Chat"],
 )
 
+kalen = KalenCore()
+
 
 class ChatRequest(BaseModel):
     message: str
+    session_id: str = "default"
 
 
 @router.get("/")
-def chat_status():
+async def chat_status():
     return {
         "status": "online",
         "module": "Chat",
@@ -20,7 +26,7 @@ def chat_status():
 
 
 @router.post("/send")
-def send_message(request: ChatRequest):
+async def send_message(request: ChatRequest):
     message = request.message.strip()
 
     if not message:
@@ -28,6 +34,19 @@ def send_message(request: ChatRequest):
             "reply": "Please enter a message."
         }
 
-    return {
-        "reply": f"KALEN AI received: {message}"
-    }
+    try:
+        reply = kalen.respond(
+            message,
+            session_id=request.session_id,
+        )
+
+        return {
+            "reply": reply,
+            "session_id": request.session_id,
+        }
+
+    except Exception as exc:
+        return {
+            "error": str(exc),
+            "session_id": request.session_id,
+        }
