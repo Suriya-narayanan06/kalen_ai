@@ -1,0 +1,1389 @@
+[  +17 ms] executing: uname -m
+[   +3 ms] Exit code 0 from: uname -m
+[        ] x86_64
+[   +8 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[   +1 ms] executing: [/home/suriya/snap/flutter/common/flutter/] git -c log.showSignature=false log HEAD -n 1 --pretty=format:%ad --date=iso
+[   +9 ms] Exit code 0 from: git -c log.showSignature=false log HEAD -n 1 --pretty=format:%ad --date=iso
+[        ] 2026-07-23 10:56:21 -0700
+[  +38 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[   +2 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[ +118 ms] executing: /home/suriya/Android/Sdk/platform-tools/adb devices -l
+[  +40 ms] List of devices attached
+           RZCX81MX05M            device usb:1-4 product:m15xnndins model:SM_E156B device:m15x transport_id:1
+[   +3 ms] /home/suriya/Android/Sdk/platform-tools/adb -s RZCX81MX05M shell getprop
+[ +115 ms] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[ +174 ms] Skipping pub get: version match.
+[  +80 ms] Found plugin speech_to_text at /home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/
+[   +8 ms] Found plugin speech_to_text_windows at /home/suriya/.pub-cache/hosted/pub.dev/speech_to_text_windows-1.0.1/
+[   +5 ms] Found plugin permission_handler at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler-13.0.1/
+[   +1 ms] Found plugin permission_handler_windows at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_windows-0.2.2/
+[   +3 ms] Found plugin permission_handler_html at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_html-0.1.4+1/
+[   +2 ms] Found plugin permission_handler_apple at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_apple-9.6.1/
+[   +2 ms] Found plugin permission_handler_android at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_android-14.0.0/
+[   +3 ms] Found plugin flutter_tts at /home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/
+[  +63 ms] Found plugin speech_to_text at /home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/
+[   +1 ms] Found plugin speech_to_text_windows at /home/suriya/.pub-cache/hosted/pub.dev/speech_to_text_windows-1.0.1/
+[   +4 ms] Found plugin permission_handler at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler-13.0.1/
+[   +2 ms] Found plugin permission_handler_windows at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_windows-0.2.2/
+[   +2 ms] Found plugin permission_handler_html at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_html-0.1.4+1/
+[   +1 ms] Found plugin permission_handler_apple at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_apple-9.6.1/
+[   +1 ms] Found plugin permission_handler_android at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_android-14.0.0/
+[   +1 ms] Found plugin flutter_tts at /home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/
+[  +11 ms] Skipping generating web_plugin_registrant.dart because it is up-to-date.
+[  +40 ms] Found plugin speech_to_text at /home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/
+[   +1 ms] Found plugin speech_to_text_windows at /home/suriya/.pub-cache/hosted/pub.dev/speech_to_text_windows-1.0.1/
+[   +2 ms] Found plugin permission_handler at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler-13.0.1/
+[   +1 ms] Found plugin permission_handler_windows at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_windows-0.2.2/
+[   +3 ms] Found plugin permission_handler_html at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_html-0.1.4+1/
+[   +1 ms] Found plugin permission_handler_apple at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_apple-9.6.1/
+[   +2 ms] Found plugin permission_handler_android at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_android-14.0.0/
+[   +2 ms] Found plugin flutter_tts at /home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/
+[   +5 ms] Generating /home/suriya/KALEN_AI/kalen_vet/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+[   +1 ms] Skipping generating GeneratedPluginRegistrant.java because it is up-to-date.
+[   +5 ms] Skipping generating generated_plugin_registrant.h because it is up-to-date.
+[   +1 ms] Skipping generating generated_plugin_registrant.cc because it is up-to-date.
+[   +2 ms] Skipping generating generated_plugins.cmake because it is up-to-date.
+[   +5 ms] Skipping generating generated_plugin_registrant.h because it is up-to-date.
+[   +1 ms] Skipping generating generated_plugin_registrant.cc because it is up-to-date.
+[   +1 ms] Skipping generating generated_plugins.cmake because it is up-to-date.
+[   +2 ms] Skipping generating GeneratedPluginRegistrant.h because it is up-to-date.
+[   +1 ms] Skipping generating GeneratedPluginRegistrant.m because it is up-to-date.
+[   +2 ms] Skipping generating GeneratedPluginRegistrant.swift because it is up-to-date.
+[  +48 ms] ro.hardware = mt6835
+[        ] ro.build.characteristics = phone
+[  +48 ms] Initializing file store
+[  +10 ms] Skipping target: gen_localizations
+[   +2 ms] gen_dart_plugin_registrant: Starting due to {InvalidatedReasonKind.inputChanged: The following inputs have updated contents: /home/suriya/KALEN_AI/kalen_vet/.dart_tool/package_config.json}
+[  +45 ms] Found plugin speech_to_text at /home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/
+[   +1 ms] Found plugin speech_to_text_windows at /home/suriya/.pub-cache/hosted/pub.dev/speech_to_text_windows-1.0.1/
+[   +2 ms] Found plugin permission_handler at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler-13.0.1/
+[   +1 ms] Found plugin permission_handler_windows at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_windows-0.2.2/
+[   +2 ms] Found plugin permission_handler_html at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_html-0.1.4+1/
+[   +1 ms] Found plugin permission_handler_apple at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_apple-9.6.1/
+[   +1 ms] Found plugin permission_handler_android at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_android-14.0.0/
+[   +2 ms] Found plugin flutter_tts at /home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/
+[   +9 ms] gen_dart_plugin_registrant: Complete
+[   +1 ms] _composite: Starting due to {}
+[        ] _composite: Complete
+[   +1 ms] complete
+[   +5 ms] Launching lib/main.dart on SM E156B in debug mode...
+[   +4 ms] /home/suriya/snap/flutter/common/flutter/bin/cache/dart-sdk/bin/dartaotruntime /home/suriya/snap/flutter/common/flutter/bin/cache/dart-sdk/bin/snapshots/frontend_server_aot.dart.snapshot --sdk-root /home/suriya/snap/flutter/common/flutter/bin/cache/artifacts/engine/common/flutter_patched_sdk/ --incremental --target=flutter --experimental-emit-debug-metadata -DFLUTTER_VERSION=3.44.8 -DFLUTTER_CHANNEL=stable -DFLUTTER_GIT_URL=https://github.com/flutter/flutter.git -DFLUTTER_FRAMEWORK_REVISION=058e0af2c2 -DFLUTTER_ENGINE_REVISION=0cd610717b -DFLUTTER_DART_VERSION=3.12.2 --output-dill /tmp/flutter_tools.FVCXKP/flutter_tool.NJLNDV/app.dill --packages /home/suriya/KALEN_AI/kalen_vet/.dart_tool/package_config.json -Ddart.vm.profile=false -Ddart.vm.product=false --enable-asserts --track-widget-creation --filesystem-scheme org-dartlang-root --initialize-from-dill build/e09161ed6a8240f7110db5db6f6e90b3.cache.dill.track.dill --source file:///home/suriya/KALEN_AI/kalen_vet/.dart_tool/flutter_build/dart_plugin_registrant.dart --source package:flutter/src/dart_plugin_registrant.dart -Dflutter.dart_plugin_registrant=file:///home/suriya/KALEN_AI/kalen_vet/.dart_tool/flutter_build/dart_plugin_registrant.dart --verbosity=error --enable-experiment=alternative-invalidation-strategy
+[  +11 ms] executing: /home/suriya/Android/Sdk/platform-tools/adb -s RZCX81MX05M shell -x logcat -v time -t 1
+[  +11 ms] <- compile package:kalen_vet/main.dart
+[ +511 ms] --------- beginning of main
+           08-31 22:07:19.915 I/BufferQueueProducer( 1329): [com.instagram.android/com.instagram.android.activity.MainTabActivity$_5632#460115](this:0xb40000716d59beb0,id:-1,api:0,p:-1,c:1329) queueBuffer: fps=90.05 dur=1010.50 max=12.06 min=10.11
+[  +11 ms] executing: /home/suriya/Android/Sdk/platform-tools/adb version
+[   +9 ms] Android Debug Bridge version 1.0.41
+           Version 37.0.1-15733141
+           Installed as /home/suriya/Android/Sdk/platform-tools/adb
+           Running on Linux 6.8.0-138-generic (x86_64)
+[   +1 ms] executing: /home/suriya/Android/Sdk/platform-tools/adb start-server
+[  +10 ms] Building APK
+[  +57 ms] executing: /home/suriya/Downloads/android-studio/jbr/bin/java -version
+[ +148 ms] Exit code 0 from: /home/suriya/Downloads/android-studio/jbr/bin/java -version
+[        ] openjdk version "25.0.2" 2026-01-20
+           OpenJDK Runtime Environment (build 25.0.2+-15348964-b329.117)
+           OpenJDK 64-Bit Server VM (build 25.0.2+-15348964-b329.117, mixed mode)
+[  +17 ms] Top-level Gradle build file not found, skipping migration of task "clean".
+[   +2 ms] executing: /home/suriya/Downloads/android-studio/jbr/bin/java --version
+[  +90 ms] Exit code 0 from: /home/suriya/Downloads/android-studio/jbr/bin/java --version
+[        ] openjdk 25.0.2 2026-01-20
+           OpenJDK Runtime Environment (build 25.0.2+-15348964-b329.117)
+           OpenJDK 64-Bit Server VM (build 25.0.2+-15348964-b329.117, mixed mode)
+[        ] Version of Java is different than impacted version, no migration attempted.
+[   +2 ms] CMake project not found, skipping support Android 15 16k page size migration.
+[  +48 ms] The developer has already configured the Built-In Kotlin flag, skipping migration.
+[   +3 ms] The developer has already configured the new DSL flag, skipping migration.
+[  +28 ms] Using gradle from /home/suriya/KALEN_AI/kalen_vet/android/gradlew.
+[  +28 ms] LocalFile: '/home/suriya/KALEN_AI/kalen_vet/android/build.gradle.kts' doesn't provide an AGP version. Checking settings.
+[        ] LocalFile: '/home/suriya/KALEN_AI/kalen_vet/android/settings.gradle.kts' provides AGP version: 9.0.1
+[  +16 ms] Running Gradle task 'assembleDebug'...
+[   +1 ms] executing: [/home/suriya/KALEN_AI/kalen_vet/android/] /home/suriya/KALEN_AI/kalen_vet/android/gradlew --full-stacktrace --info -Pverbose=true -Ptarget-platform=android-arm64 -Ptarget=/home/suriya/KALEN_AI/kalen_vet/lib/main.dart -Pbase-application-name=android.app.Application -Pdart-defines=RkxVVFRFUl9WRVJTSU9OPTMuNDQuOA==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049MDU4ZTBhZjJjMg==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049MGNkNjEwNzE3Yg==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My4xMi4y -Pdart-obfuscation=false -Ptrack-widget-creation=true -Ptree-shake-icons=false -Pfilesystem-scheme=org-dartlang-root assembleDebug
+[+1610 ms] WARNING: A restricted method in java.lang.System has been called
+[   +2 ms] WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/home/suriya/.gradle/wrapper/dists/gradle-9.1.0-all/7wzd0jkjit61aq2p43wpjgij9/gradle-9.1.0/lib/native-platform-0.22-milestone-28.jar)
+[        ] WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+[   +2 ms] WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+[   +6 ms] Initialized native services in: /home/suriya/.gradle/native
+[  +16 ms] Initialized jansi services in: /home/suriya/.gradle/native
+[ +262 ms] Welcome to Gradle 9.1.0!
+[        ] Here are the highlights of this release:
+[        ]  - Full Java 25 support
+[        ]  - Native task graph visualization
+[        ]  - Enhanced console output
+[        ] For more details see https://docs.gradle.org/9.1.0/release-notes.html
+[ +501 ms] Found daemon DaemonInfo{pid=5058, address=[29dbf3ba-09f4-4bf0-8ad6-a72f124aa199 port:44601, addresses:[/127.0.0.1]], state=Idle, lastBusy=1787756296002, context=DefaultDaemonContext[uid=ac5aec9f-9ca5-42db-9e72-f620f54a306a,javaHome=/home/suriya/.vscode/extensions/redhat.java-1.55.0-linux-x64/jre/21.0.11-linux-x86_64,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=/home/suriya/.gradle/daemon,pid=5058,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=4G,-XX:ReservedCodeCacheSize=512m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx8G,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+[        ] JVM is incompatible.
+[        ] Wanted: DaemonRequestContext{jvmCriteria=/home/suriya/Downloads/android-studio/jbr (no JDK specified, using current Java home), daemonOpts=[-XX:MaxMetaspaceSize=4G, -XX:ReservedCodeCacheSize=512m, -XX:+HeapDumpOnOutOfMemoryError, -Xmx8G, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+[        ] Actual: DefaultDaemonContext[uid=ac5aec9f-9ca5-42db-9e72-f620f54a306a,javaHome=/home/suriya/.vscode/extensions/redhat.java-1.55.0-linux-x64/jre/21.0.11-linux-x86_64,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=/home/suriya/.gradle/daemon,pid=5058,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=4G,-XX:ReservedCodeCacheSize=512m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx8G,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+[   +1 ms]   Looking for a different daemon...
+[        ] Found daemon DaemonInfo{pid=5143, address=[1146e598-8668-41ff-9c8d-b3addbbd6e72 port:46027, addresses:[/127.0.0.1]], state=Idle, lastBusy=1787756248333, context=DefaultDaemonContext[uid=932b2913-02bb-4219-8b9f-ee0e0701590f,javaHome=/usr/lib/jvm/java-17-openjdk-amd64,javaVersion=17,javaVendor=Ubuntu,daemonRegistryDir=/home/suriya/.gradle/daemon,pid=5143,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=4G,-XX:ReservedCodeCacheSize=512m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx8G,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+[   +1 ms] JVM is incompatible.
+[        ] Wanted: DaemonRequestContext{jvmCriteria=/home/suriya/Downloads/android-studio/jbr (no JDK specified, using current Java home), daemonOpts=[-XX:MaxMetaspaceSize=4G, -XX:ReservedCodeCacheSize=512m, -XX:+HeapDumpOnOutOfMemoryError, -Xmx8G, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+[   +3 ms] Actual: DefaultDaemonContext[uid=932b2913-02bb-4219-8b9f-ee0e0701590f,javaHome=/usr/lib/jvm/java-17-openjdk-amd64,javaVersion=17,javaVendor=Ubuntu,daemonRegistryDir=/home/suriya/.gradle/daemon,pid=5143,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=4G,-XX:ReservedCodeCacheSize=512m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx8G,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+[        ]   Looking for a different daemon...
+[        ] The client will now receive all logging from the daemon (pid: 10452). The daemon log file: /home/suriya/.gradle/daemon/9.1.0/daemon-10452.out.log
+[        ] Starting 2nd build in daemon [uptime: 3 mins 21.375 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 8 GiB, non-heap usage: 6% of 4 GiB]
+[        ] Using 4 worker leases.
+[        ] Now considering [/home/suriya/KALEN_AI/kalen_vet/android, /home/suriya/snap/flutter/common/flutter/packages/flutter_tools/gradle] as hierarchies to watch
+[        ] Watching the file system is configured to be enabled if available
+[        ] File system watching is active
+[        ] Starting Build
+[        ] Now considering [/home/suriya/snap/flutter/common/flutter/packages/flutter_tools/gradle, /home/suriya/KALEN_AI/kalen_vet/android] as hierarchies to watch
+[ +187 ms] > Configure project :gradle
+[        ] Evaluating project ':gradle' using build file '/home/suriya/snap/flutter/common/flutter/packages/flutter_tools/gradle/build.gradle.kts'.
+[        ] Resolved plugin [id: 'org.gradle.java-gradle-plugin']
+[        ] Resolved plugin [id: 'org.gradle.groovy']
+[        ] Resolved plugin [id: 'org.gradle.kotlin.kotlin-dsl', version: '6.2.0']
+[        ] Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.2.20']
+[        ] Build 0dbbeed8-a14f-49c8-a9f3-7e14968dd007 is started
+[   +2 ms] Using Kotlin Gradle Plugin gradle813 variant
+[        ] kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+[        ] kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+[        ] WARNING: Unsupported Kotlin plugin version.
+[        ] The `embedded-kotlin` and `kotlin-dsl` plugins rely on features of Kotlin `2.2.0` that might work differently than in the requested version `2.2.20`.
+[        ] file or directory '/home/suriya/snap/flutter/common/flutter/packages/flutter_tools/gradle/src/main/java', not found
+[        ] Resolved plugin [id: 'dev.flutter.flutter-plugin-loader', version: '1.0.0']
+[        ] Resolved plugin [id: 'com.android.application', version: '9.0.1', apply: false]
+[        ] Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.3.20', apply: false]
+[   +5 ms] Resolve mutations for :gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#161,Execution worker,5,main]) started.
+[        ] :gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#161,Execution worker,5,main]) started.
+[        ] > Task :gradle:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[        ] Skipping task ':gradle:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+[        ] Resolve mutations for :gradle:compileKotlin (Thread[#161,Execution worker,5,main]) started.
+[        ] :gradle:compileKotlin (Thread[#161,Execution worker,5,main]) started.
+[  +88 ms] > Task :gradle:compileKotlin UP-TO-DATE
+[        ] Caching disabled for task ':gradle:compileKotlin' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':gradle:compileKotlin' as it is up-to-date.
+[        ] Resolve mutations for :gradle:compileJava (Thread[#161,Execution worker,5,main]) started.
+[   +3 ms] :gradle:compileJava (Thread[#161,Execution worker,5,main]) started.
+[        ] > Task :gradle:compileJava NO-SOURCE
+[        ] Skipping task ':gradle:compileJava' as it has no source files and no previous output files.
+[        ] Resolve mutations for :gradle:compileGroovy (Thread[#161,Execution worker,5,main]) started.
+[   +1 ms] :gradle:compileGroovy (Thread[#160,included builds,5,main]) started.
+[        ] > Task :gradle:compileGroovy NO-SOURCE
+[        ] Skipping task ':gradle:compileGroovy' as it has no source files and no previous output files.
+[   +2 ms] Resolve mutations for :gradle:pluginDescriptors (Thread[#160,included builds,5,main]) started.
+[        ] :gradle:pluginDescriptors (Thread[#160,included builds,5,main]) started.
+[        ] > Task :gradle:pluginDescriptors UP-TO-DATE
+[        ] Caching disabled for task ':gradle:pluginDescriptors' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Skipping task ':gradle:pluginDescriptors' as it is up-to-date.
+[        ] Resolve mutations for :gradle:processResources (Thread[#161,Execution worker,5,main]) started.
+[   +3 ms] :gradle:processResources (Thread[#164,Execution worker Thread 3,5,main]) started.
+[        ] > Task :gradle:processResources UP-TO-DATE
+[        ] Caching disabled for task ':gradle:processResources' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Skipping task ':gradle:processResources' as it is up-to-date.
+[        ] Resolve mutations for :gradle:classes (Thread[#161,Execution worker,5,main]) started.
+[        ] :gradle:classes (Thread[#161,Execution worker,5,main]) started.
+[        ] > Task :gradle:classes UP-TO-DATE
+[        ] Skipping task ':gradle:classes' as it has no actions.
+[        ] Resolve mutations for :gradle:jar (Thread[#164,Execution worker Thread 3,5,main]) started.
+[   +3 ms] :gradle:jar (Thread[#161,Execution worker,5,main]) started.
+[        ] > Task :gradle:jar UP-TO-DATE
+[        ] Caching disabled for task ':gradle:jar' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Skipping task ':gradle:jar' as it is up-to-date.
+[ +172 ms] Settings evaluated using settings file '/home/suriya/KALEN_AI/kalen_vet/android/settings.gradle.kts'.
+[ +102 ms] Projects loaded. Root project using build file '/home/suriya/KALEN_AI/kalen_vet/android/build.gradle.kts'.
+[        ] Included projects: [root project 'android', project ':app', project ':flutter_tts', project ':permission_handler_android', project ':speech_to_text']
+[ +296 ms] > Configure project :app
+[        ] Evaluating project ':app' using build file '/home/suriya/KALEN_AI/kalen_vet/android/app/build.gradle.kts'.
+[        ] Resolved plugin [id: 'com.android.application']
+[        ] Resolved plugin [id: 'dev.flutter.flutter-gradle-plugin']
+[        ] WARNING: The option setting 'android.builtInKotlin=false' is deprecated.
+[        ] The current default is 'true'.
+[        ] It will be removed in version 10.0 of the Android Gradle plugin.
+[        ] WARNING: The option setting 'android.newDsl=false' is deprecated.
+[   +8 ms] The current default is 'true'.
+[        ] It will be removed in version 10.0 of the Android Gradle plugin.
+[        ] Using default execution profile
+[        ] Build 723f468f-48a6-4a47-b85f-aa5cfed11065 is started
+[        ] Using Kotlin Gradle Plugin gradle813 variant
+[        ] Using Kotlin Gradle Plugin gradle813 variant
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[   +4 ms] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[   +1 ms] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[   +1 ms] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[   +1 ms] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[   +3 ms] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[   +5 ms] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[   +3 ms] C/C++: android.ndkPath from module build.gradle is not set
+[   +5 ms] C/C++: ndk.dir in local.properties is not set
+[   +1 ms] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[   +2 ms] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/suriya/Android/Sdk
+[   +1 ms] w: [33m[1m⚠️ Deprecated 'org.jetbrains.kotlin.android' plugin usage[0m[0m
+[   +3 ms] The 'org.jetbrains.kotlin.android' plugin in project ':app' is no longer required for Kotlin support since AGP 9.0.
+[        ] [32m[1mSolution:[0m[0m
+[        ] [32m[3mRemove both `android.builtInKotlin=true` and `android.newDsl=false` from `gradle.properties`, then migrate to built-in Kotlin.[0m[0m
+[   +1 ms] [36mSee [0m[34mhttps://kotl.in/gradle/agp-built-in-kotlin[0m[36m for more details.[0m
+[        ] > Configure project :
+[   +3 ms] Evaluating root project 'android' using build file '/home/suriya/KALEN_AI/kalen_vet/android/build.gradle.kts'.
+[ +234 ms] > Configure project :flutter_tts
+[        ] Evaluating project ':flutter_tts' using build file '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/build.gradle'.
+[   +3 ms] Using default execution profile
+[        ] Using Kotlin Gradle Plugin gradle813 variant
+[        ] w: [33m[1m⚠️ Deprecated 'org.jetbrains.kotlin.android' plugin usage[0m[0m
+[        ] The 'org.jetbrains.kotlin.android' plugin in project ':flutter_tts' is no longer required for Kotlin support since AGP 9.0.
+[        ] [32m[1mSolution:[0m[0m
+[        ] [32m[3mRemove both `android.builtInKotlin=true` and `android.newDsl=false` from `gradle.properties`, then migrate to built-in Kotlin.[0m[0m
+[        ] [36mSee [0m[34mhttps://kotl.in/gradle/agp-built-in-kotlin[0m[36m for more details.[0m
+[ +192 ms] > Configure project :permission_handler_android
+[        ] Evaluating project ':permission_handler_android' using build file '/home/suriya/.pub-cache/hosted/pub.dev/permission_handler_android-14.0.0/android/build.gradle.kts'.
+[   +2 ms] Resolved plugin [id: 'com.android.library']
+[        ] Using default execution profile
+[   +2 ms] Warning: The plugin permission_handler_android requires Android SDK version 37 or higher.
+[   +2 ms] For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+[   +1 ms] w: [33m[1m⚠️ Deprecated 'org.jetbrains.kotlin.android' plugin usage[0m[0m
+[        ] The 'org.jetbrains.kotlin.android' plugin in project ':permission_handler_android' is no longer required for Kotlin support since AGP 9.0.
+[   +1 ms] [32m[1mSolution:[0m[0m
+[   +2 ms] [32m[3mRemove both `android.builtInKotlin=true` and `android.newDsl=false` from `gradle.properties`, then migrate to built-in Kotlin.[0m[0m
+[   +3 ms] [36mSee [0m[34mhttps://kotl.in/gradle/agp-built-in-kotlin[0m[36m for more details.[0m
+[ +182 ms] > Configure project :speech_to_text
+[        ] Evaluating project ':speech_to_text' using build file '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/build.gradle'.
+[   +1 ms] Using default execution profile
+[   +4 ms] Using Kotlin Gradle Plugin gradle813 variant
+[   +5 ms] w: [33m[1m⚠️ Deprecated 'org.jetbrains.kotlin.android' plugin usage[0m[0m
+[   +5 ms] The 'org.jetbrains.kotlin.android' plugin in project ':speech_to_text' is no longer required for Kotlin support since AGP 9.0.
+[        ] [32m[1mSolution:[0m[0m
+[        ] [32m[3mRemove both `android.builtInKotlin=true` and `android.newDsl=false` from `gradle.properties`, then migrate to built-in Kotlin.[0m[0m
+[   +1 ms] [36mSee [0m[34mhttps://kotl.in/gradle/agp-built-in-kotlin[0m[36m for more details.[0m
+[        ] All projects evaluated.
+[   +3 ms] Task name matched 'assembleDebug'
+[   +3 ms] Selected primary task 'assembleDebug' from project :
+[   +1 ms] Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugKotlin
+[   +1 ms] Your project is configured to compile against Android SDK 36, but the following plugin(s) require to be compiled against a higher Android SDK version:
+[   +1 ms] - permission_handler_android compiles against Android SDK 37
+[        ] Fix this issue by compiling against the highest Android SDK version (they are backward compatible).
+[   +1 ms] Add the following to /home/suriya/KALEN_AI/kalen_vet/android/app/build.gradle.kts:
+[   +1 ms]     android {
+[        ]         compileSdk = 37
+[        ]         ...
+[   +1 ms]     }
+[   +1 ms] WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): flutter_tts, speech_to_text
+[   +2 ms] Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+[        ] Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+[        ] If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing 
+[        ] an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+[        ] If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+[ +157 ms] WARNING: We recommend using a newer Android Gradle plugin to use compile SDK version 37.0
+[   +2 ms] This Android Gradle plugin (9.0.1) was tested up to compile SDK version 36.1.
+[   +1 ms] You are strongly encouraged to update your project to use a newer
+[        ] Android Gradle plugin that has been tested with compile SDK version 37.0.
+[        ] If you are already using the latest version of the Android Gradle plugin,
+[   +1 ms] you may need to wait until a newer version with support for compile SDK version 37.0 is available.
+[   +3 ms] For more information refer to the compatibility table:
+[        ] https://d.android.com/r/tools/api-level-support
+[        ] To suppress this warning, add/update
+[        ]     android.suppressUnsupportedCompileSdk=37.0
+[        ] to this project's gradle.properties.
+[ +188 ms] Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugAndroidTestKotlin
+[        ] Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileProfileKotlin
+[   +8 ms] Tasks to be executed: [task ':app:DebugMinSdkCheck', task ':app:preBuild', task ':app:preDebugBuild', task ':app:mergeDebugNativeDebugMetadata', task ':app:checkKotlinGradlePluginConfigurationErrors', task ':app:cleanMergeDebugAssets', task ':app:compileFlutterBuildDebug', task ':app:generateDebugAssets', task ':flutter_tts:generateDebugAssets', task ':flutter_tts:preBuild', task ':flutter_tts:preDebugBuild', task ':flutter_tts:mergeDebugAssets', task ':permission_handler_android:generateDebugAssets', task ':permission_handler_android:preBuild', task ':permission_handler_android:preDebugBuild', task ':permission_handler_android:mergeDebugAssets', task ':speech_to_text:generateDebugAssets', task ':speech_to_text:preBuild', task ':speech_to_text:preDebugBuild', task ':speech_to_text:mergeDebugAssets', task ':app:mergeDebugAssets', task ':app:copyFlutterAssetsDebug', task ':app:generateDebugResources', task ':app:packageDebugResources', task ':flutter_tts:processDebugNavigationResources', task ':permission_handler_android:processDebugNavigationResources', task ':speech_to_text:processDebugNavigationResources', task ':app:processDebugNavigationResources', task ':app:parseDebugLocalResources', task ':app:generateDebugRFile', task ':flutter_tts:checkKotlinGradlePluginConfigurationErrors', task ':flutter_tts:generateDebugResources', task ':flutter_tts:packageDebugResources', task ':flutter_tts:parseDebugLocalResources', task ':flutter_tts:generateDebugRFile', task ':flutter_tts:compileDebugKotlin', task ':flutter_tts:javaPreCompileDebug', task ':flutter_tts:compileDebugJavaWithJavac', task ':flutter_tts:bundleLibCompileToJarDebug', task ':permission_handler_android:checkKotlinGradlePluginConfigurationErrors', task ':permission_handler_android:generateDebugResources', task ':permission_handler_android:packageDebugResources', task ':permission_handler_android:parseDebugLocalResources', task ':permission_handler_android:generateDebugRFile', task ':permission_handler_android:compileDebugKotlin', task ':permission_handler_android:javaPreCompileDebug', task ':permission_handler_android:compileDebugJavaWithJavac', task ':permission_handler_android:bundleLibCompileToJarDebug', task ':speech_to_text:checkKotlinGradlePluginConfigurationErrors', task ':speech_to_text:generateDebugResources', task ':speech_to_text:packageDebugResources', task ':speech_to_text:parseDebugLocalResources', task ':speech_to_text:generateDebugRFile', task ':speech_to_text:compileDebugKotlin', task ':speech_to_text:javaPreCompileDebug', task ':speech_to_text:compileDebugJavaWithJavac', task ':speech_to_text:bundleLibCompileToJarDebug', task ':app:compileDebugKotlin', task ':app:javaPreCompileDebug', task ':app:compileDebugJavaWithJavac', task ':app:compressDebugAssets', task ':flutter_tts:bundleLibRuntimeToJarDebug', task ':permission_handler_android:bundleLibRuntimeToJarDebug', task ':speech_to_text:bundleLibRuntimeToJarDebug', task ':app:desugarDebugFileDependencies', task ':flutter_tts:writeDebugAarMetadata', task ':permission_handler_android:writeDebugAarMetadata', task ':speech_to_text:writeDebugAarMetadata', task ':app:checkDebugAarMetadata', task ':app:compileDebugNavigationResources', task ':app:mapDebugSourceSetPaths', task ':app:mergeDebugResources', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':flutter_tts:extractDeepLinksDebug', task ':flutter_tts:processDebugManifest', task ':permission_handler_android:extractDeepLinksDebug', task ':permission_handler_android:processDebugManifest', task ':speech_to_text:extractDeepLinksDebug', task ':speech_to_text:processDebugManifest', task ':app:processDebugMainManifest', task ':app:outputDebugAppLinkSettings', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':flutter_tts:compileDebugLibraryResources', task ':permission_handler_android:compileDebugLibraryResources', task ':speech_to_text:compileDebugLibraryResources', task ':app:processDebugResources', task ':app:dexBuilderDebug', task ':app:mergeDebugGlobalSynthetics', task ':app:processDebugJavaRes', task ':flutter_tts:processDebugJavaRes', task ':permission_handler_android:processDebugJavaRes', task ':speech_to_text:processDebugJavaRes', task ':app:mergeDebugJavaResource', task ':app:checkDebugDuplicateClasses', task ':app:mergeExtDexDebug', task ':flutter_tts:bundleLibRuntimeToDirDebug', task ':permission_handler_android:bundleLibRuntimeToDirDebug', task ':speech_to_text:bundleLibRuntimeToDirDebug', task ':app:mergeLibDexDebug', task ':app:mergeProjectDexDebug', task ':app:configureCMakeDebug[arm64-v8a]', task ':app:buildCMakeDebug[arm64-v8a]', task ':app:configureCMakeDebug[armeabi-v7a]', task ':app:buildCMakeDebug[armeabi-v7a]', task ':app:configureCMakeDebug[x86_64]', task ':app:buildCMakeDebug[x86_64]', task ':app:copyJniLibsflutterBuildDebug', task ':app:mergeDebugJniLibFolders', task ':flutter_tts:mergeDebugJniLibFolders', task ':flutter_tts:mergeDebugNativeLibs', task ':flutter_tts:copyDebugJniLibsProjectOnly', task ':permission_handler_android:mergeDebugJniLibFolders', task ':permission_handler_android:mergeDebugNativeLibs', task ':permission_handler_android:copyDebugJniLibsProjectOnly', task ':speech_to_text:mergeDebugJniLibFolders', task ':speech_to_text:mergeDebugNativeLibs', task ':speech_to_text:copyDebugJniLibsProjectOnly', task ':app:mergeDebugNativeLibs', task ':app:stripDebugDebugSymbols', task ':app:validateSigningDebug', task ':app:writeDebugAppMetadata', task ':app:writeDebugSigningConfigVersions', task ':app:packageDebug', task ':app:createDebugApkListingFileRedirect', task ':app:assembleDebug', task ':flutter_tts:checkDebugAarMetadata', task ':flutter_tts:stripDebugDebugSymbols', task ':flutter_tts:copyDebugJniLibsProjectAndLocalJars', task ':flutter_tts:extractDebugAnnotations', task ':flutter_tts:extractDeepLinksForAarDebug', task ':flutter_tts:mergeDebugGeneratedProguardFiles', task ':flutter_tts:mergeDebugConsumerProguardFiles', task ':flutter_tts:prepareDebugArtProfile', task ':flutter_tts:prepareLintJarForPublish', task ':flutter_tts:mergeDebugJavaResource', task ':flutter_tts:syncDebugLibJars', task ':flutter_tts:bundleDebugAar', task ':flutter_tts:assembleDebug', task ':permission_handler_android:checkDebugAarMetadata', task ':permission_handler_android:stripDebugDebugSymbols', task ':permission_handler_android:copyDebugJniLibsProjectAndLocalJars', task ':permission_handler_android:extractDebugAnnotations', task ':permission_handler_android:extractDeepLinksForAarDebug', task ':permission_handler_android:mergeDebugGeneratedProguardFiles', task ':permission_handler_android:mergeDebugConsumerProguardFiles', task ':permission_handler_android:prepareDebugArtProfile', task ':permission_handler_android:prepareLintJarForPublish', task ':permission_handler_android:mergeDebugJavaResource', task ':permission_handler_android:syncDebugLibJars', task ':permission_handler_android:bundleDebugAar', task ':permission_handler_android:assembleDebug', task ':speech_to_text:checkDebugAarMetadata', task ':speech_to_text:stripDebugDebugSymbols', task ':speech_to_text:copyDebugJniLibsProjectAndLocalJars', task ':speech_to_text:extractDebugAnnotations', task ':speech_to_text:extractDeepLinksForAarDebug', task ':speech_to_text:mergeDebugGeneratedProguardFiles', task ':speech_to_text:mergeDebugConsumerProguardFiles', task ':speech_to_text:prepareDebugArtProfile', task ':speech_to_text:prepareLintJarForPublish', task ':speech_to_text:mergeDebugJavaResource', task ':speech_to_text:syncDebugLibJars', task ':speech_to_text:bundleDebugAar', task ':speech_to_text:assembleDebug']
+[        ] Tasks that were excluded: []
+[  +91 ms] work action Parameters of IdentityTransform (Thread[#164,Execution worker Thread 3,5,main]) started.
+[        ] work action Parameters of DexingNoClasspathTransform (Thread[#160,included builds,5,main]) started.
+[        ] work action Parameters of DexingOutputSplitTransform (Thread[#160,included builds,5,main]) started.
+[        ] work action Parameters of ClassesDirToClassesTransform (Thread[#160,included builds,5,main]) started.
+[        ] work action Parameters of DexingOutputSplitTransform (Thread[#160,included builds,5,main]) started.
+[        ] Resolve mutations for :app:DebugMinSdkCheck (Thread[#160,included builds,5,main]) started.
+[        ] :app:DebugMinSdkCheck (Thread[#160,included builds,5,main]) started.
+[        ] > Task :app:DebugMinSdkCheck
+[   +3 ms] Caching disabled for task ':app:DebugMinSdkCheck' because:
+[        ]   Build cache is disabled
+[        ] Task ':app:DebugMinSdkCheck' is not up-to-date because:
+[        ]   Task has not declared any outputs despite executing actions.
+[        ] Resolve mutations for :app:preBuild (Thread[#164,Execution worker Thread 3,5,main]) started.
+[        ] :app:preBuild (Thread[#160,included builds,5,main]) started.
+[        ] > Task :app:preBuild UP-TO-DATE
+[        ] Skipping task ':app:preBuild' as it has no actions.
+[        ] Resolve mutations for :app:preDebugBuild (Thread[#160,included builds,5,main]) started.
+[        ] :app:preDebugBuild (Thread[#160,included builds,5,main]) started.
+[        ] > Task :app:preDebugBuild UP-TO-DATE
+[        ] Skipping task ':app:preDebugBuild' as it has no actions.
+[        ] Resolve mutations for :app:mergeDebugNativeDebugMetadata (Thread[#160,included builds,5,main]) started.
+[        ] :app:mergeDebugNativeDebugMetadata (Thread[#160,included builds,5,main]) started.
+[        ] > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+[        ] Skipping task ':app:mergeDebugNativeDebugMetadata' as it has no source files and no previous output files.
+[        ] Resolve mutations for :app:checkKotlinGradlePluginConfigurationErrors (Thread[#160,included builds,5,main]) started.
+[        ] :app:checkKotlinGradlePluginConfigurationErrors (Thread[#160,included builds,5,main]) started.
+[   +6 ms] > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[   +3 ms] Skipping task ':app:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+[   +2 ms] Resolve mutations for :app:cleanMergeDebugAssets (Thread[#164,Execution worker Thread 3,5,main]) started.
+[        ] :app:cleanMergeDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] > Task :app:cleanMergeDebugAssets UP-TO-DATE
+[        ] Caching disabled for task ':app:cleanMergeDebugAssets' because:
+[   +1 ms]   Build cache is disabled
+[        ] Task ':app:cleanMergeDebugAssets' is not up-to-date because:
+[        ]   Task has not declared any outputs despite executing actions.
+[        ] Resolve mutations for :app:compileFlutterBuildDebug (Thread[#161,Execution worker,5,main]) started.
+[        ] :app:compileFlutterBuildDebug (Thread[#161,Execution worker,5,main]) started.
+[+1976 ms] > Task :app:compileFlutterBuildDebug
+[   +4 ms] Caching disabled for task ':app:compileFlutterBuildDebug' because:
+[   +2 ms]   Build cache is disabled
+[        ]   Caching has not been enabled for the task
+[        ] Task ':app:compileFlutterBuildDebug' is not up-to-date because:
+[   +1 ms]   Value of input property 'verbose' has changed for task ':app:compileFlutterBuildDebug'
+[   +4 ms] Starting process 'command '/home/suriya/snap/flutter/common/flutter/bin/flutter''. Working directory: /home/suriya/KALEN_AI/kalen_vet Command: /home/suriya/snap/flutter/common/flutter/bin/flutter --verbose assemble --no-version-check --depfile /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/flutter/debug/flutter_build.d --output /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/flutter/debug -dTargetFile=/home/suriya/KALEN_AI/kalen_vet/lib/main.dart -dTargetPlatform=android -dBuildMode=debug -dTrackWidgetCreation=true --DartDefines=RkxVVFRFUl9WRVJTSU9OPTMuNDQuOA==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049MDU4ZTBhZjJjMg==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049MGNkNjEwNzE3Yg==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My4xMi4y -dFlavor= -dAndroidArchs=android-arm64 -dMinSdkVersion=24 debug_android_application
+[   +2 ms] Successfully started process 'command '/home/suriya/snap/flutter/common/flutter/bin/flutter''
+[        ] [  +33 ms] executing: uname -m
+[        ] [   +7 ms] Exit code 0 from: uname -m
+[        ] [        ] x86_64
+[   +2 ms] [  +11 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[   +7 ms] [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[   +1 ms] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[   +1 ms] [   +1 ms] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[        ] [  +14 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[   +1 ms] [        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] [   +2 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[   +3 ms] [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] [  +76 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ] [   +2 ms] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[   +2 ms] [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[        ] [  +50 ms] Initializing file store
+[        ] [  +43 ms] dart_build: Starting due to {}
+[        ] [   +2 ms] Skipping target: gen_localizations
+[        ] [   +2 ms] gen_dart_plugin_registrant: Starting due to {InvalidatedReasonKind.outputSetAddition: The following outputs were added to the output set: /home/suriya/KALEN_AI/kalen_vet/.dart_tool/flutter_build/dart_plugin_registrant.dart, InvalidatedReasonKind.inputChanged: The following inputs have updated contents: /home/suriya/KALEN_AI/kalen_vet/.dart_tool/package_config.json}
+[        ] [ +109 ms] No packages with native assets. Skipping native assets compilation.
+[        ] [   +2 ms] dart_build: Complete
+[        ] [   +2 ms] install_code_assets: Starting due to {}
+[        ] [  +11 ms] Writing native assets json to file:///home/suriya/KALEN_AI/kalen_vet/.dart_tool/flutter_build/cab9a242b1d11f8fff225729ecf57782/native_assets.json.
+[   +2 ms] [   +3 ms] Writing /home/suriya/KALEN_AI/kalen_vet/.dart_tool/flutter_build/cab9a242b1d11f8fff225729ecf57782/native_assets.json done.
+[        ] [        ] install_code_assets: Complete
+[        ] [  +59 ms] Found plugin speech_to_text at /home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/
+[        ] [  +10 ms] Found plugin speech_to_text_windows at /home/suriya/.pub-cache/hosted/pub.dev/speech_to_text_windows-1.0.1/
+[        ] [   +8 ms] Found plugin permission_handler at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler-13.0.1/
+[        ] [   +2 ms] Found plugin permission_handler_windows at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_windows-0.2.2/
+[        ] [   +4 ms] Found plugin permission_handler_html at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_html-0.1.4+1/
+[        ] [   +2 ms] Found plugin permission_handler_apple at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_apple-9.6.1/
+[        ] [   +2 ms] Found plugin permission_handler_android at /home/suriya/.pub-cache/hosted/pub.dev/permission_handler_android-14.0.0/
+[        ] [   +5 ms] Found plugin flutter_tts at /home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/
+[        ] [  +24 ms] Skipping generating dart_plugin_registrant.dart because it is up-to-date.
+[        ] [        ] gen_dart_plugin_registrant: Complete
+[        ] [   +4 ms] kernel_snapshot_program: Starting due to {}
+[        ] [  +23 ms] /home/suriya/snap/flutter/common/flutter/bin/cache/dart-sdk/bin/dartaotruntime /home/suriya/snap/flutter/common/flutter/bin/cache/dart-sdk/bin/snapshots/frontend_server_aot.dart.snapshot --sdk-root /home/suriya/snap/flutter/common/flutter/bin/cache/artifacts/engine/common/flutter_patched_sdk/ --target=flutter --no-print-incremental-dependencies -DFLUTTER_VERSION=3.44.8 -DFLUTTER_CHANNEL=stable -DFLUTTER_GIT_URL=https://github.com/flutter/flutter.git -DFLUTTER_FRAMEWORK_REVISION=058e0af2c2 -DFLUTTER_ENGINE_REVISION=0cd610717b -DFLUTTER_DART_VERSION=3.12.2 -DFLUTTER_APP_FLAVOR= -Ddart.vm.profile=false -Ddart.vm.product=false --enable-asserts --track-widget-creation --no-link-platform --packages /home/suriya/KALEN_AI/kalen_vet/.dart_tool/package_config.json --output-dill /home/suriya/KALEN_AI/kalen_vet/.dart_tool/flutter_build/cab9a242b1d11f8fff225729ecf57782/app.dill --depfile /home/suriya/KALEN_AI/kalen_vet/.dart_tool/flutter_build/cab9a242b1d11f8fff225729ecf57782/kernel_snapshot_program.d --incremental --initialize-from-dill /home/suriya/KALEN_AI/kalen_vet/.dart_tool/flutter_build/cab9a242b1d11f8fff225729ecf57782/app.dill --source file:///home/suriya/KALEN_AI/kalen_vet/.dart_tool/flutter_build/dart_plugin_registrant.dart --source package:flutter/src/dart_plugin_registrant.dart -Dflutter.dart_plugin_registrant=file:///home/suriya/KALEN_AI/kalen_vet/.dart_tool/flutter_build/dart_plugin_registrant.dart --verbosity=error package:kalen_vet/main.dart
+[+9735 ms] [+11184 ms] kernel_snapshot_program: Complete
+[ +699 ms] [ +698 ms] debug_android_application: Starting due to {}
+[ +700 ms] [ +695 ms] impellerc command: [/home/suriya/snap/flutter/common/flutter/bin/cache/artifacts/engine/linux-x64/impellerc, --sksl, --runtime-stage-gles, --runtime-stage-gles3, --runtime-stage-vulkan, --iplr, --sl=/home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/flutter/debug/flutter_assets/shaders/ink_sparkle.frag, --spirv=/home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/flutter/debug/flutter_assets/shaders/ink_sparkle.frag.spirv, --input=/home/suriya/snap/flutter/common/flutter/packages/flutter/lib/src/material/shaders/ink_sparkle.frag, --input-type=frag, --include=/home/suriya/snap/flutter/common/flutter/packages/flutter/lib/src/material/shaders, --include=/home/suriya/snap/flutter/common/flutter/bin/cache/artifacts/engine/linux-x64/shader_lib]
+[        ] [   +3 ms] impellerc command: [/home/suriya/snap/flutter/common/flutter/bin/cache/artifacts/engine/linux-x64/impellerc, --sksl, --runtime-stage-gles, --runtime-stage-gles3, --runtime-stage-vulkan, --iplr, --sl=/home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/flutter/debug/flutter_assets/shaders/stretch_effect.frag, --spirv=/home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/flutter/debug/flutter_assets/shaders/stretch_effect.frag.spirv, --input=/home/suriya/snap/flutter/common/flutter/packages/flutter/lib/src/material/shaders/stretch_effect.frag, --input-type=frag, --include=/home/suriya/snap/flutter/common/flutter/packages/flutter/lib/src/material/shaders, --include=/home/suriya/snap/flutter/common/flutter/bin/cache/artifacts/engine/linux-x64/shader_lib]
+[ +799 ms] [ +732 ms] debug_android_application: Complete
+[ +599 ms] [ +674 ms] Persisting file store
+[        ] [   +5 ms] Done persisting file store
+[  +99 ms] [  +12 ms] build succeeded.
+[        ] [   +6 ms] "flutter assemble" took 14,492ms.
+[        ] [  +41 ms] Running 1 shutdown hook
+[        ] [   +1 ms] Shutdown hooks complete
+[ +299 ms] [ +282 ms] exiting with code 0
+[ +100 ms] Resolve mutations for :app:generateDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :app:generateDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] > Task :app:generateDebugAssets UP-TO-DATE
+[        ] Skipping task ':app:generateDebugAssets' as it has no actions.
+[        ] Resolve mutations for :flutter_tts:generateDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :flutter_tts:generateDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[   +1 ms] > Task :flutter_tts:generateDebugAssets UP-TO-DATE
+[        ] Skipping task ':flutter_tts:generateDebugAssets' as it has no actions.
+[        ] Resolve mutations for :flutter_tts:preBuild (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :flutter_tts:preBuild (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] > Task :flutter_tts:preBuild UP-TO-DATE
+[        ] Skipping task ':flutter_tts:preBuild' as it has no actions.
+[        ] Resolve mutations for :flutter_tts:preDebugBuild (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :flutter_tts:preDebugBuild (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] > Task :flutter_tts:preDebugBuild UP-TO-DATE
+[        ] Skipping task ':flutter_tts:preDebugBuild' as it has no actions.
+[        ] Resolve mutations for :flutter_tts:mergeDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :flutter_tts:mergeDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] > Task :flutter_tts:mergeDebugAssets
+[        ] Caching disabled for task ':flutter_tts:mergeDebugAssets' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Task ':flutter_tts:mergeDebugAssets' is not up-to-date because:
+[        ]   Output property 'outputDir' file /home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/intermediates/assets/debug/mergeDebugAssets has been removed.
+[   +3 ms] The input changes require a full rebuild for incremental task ':flutter_tts:mergeDebugAssets'.
+[        ] work action resolve mergeDebugAssets (project :flutter_tts) (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] Resolve mutations for :permission_handler_android:generateDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :permission_handler_android:generateDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] > Task :permission_handler_android:generateDebugAssets UP-TO-DATE
+[        ] Skipping task ':permission_handler_android:generateDebugAssets' as it has no actions.
+[        ] Resolve mutations for :permission_handler_android:preBuild (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :permission_handler_android:preBuild (Thread[#162,Execution worker Thread 2,5,main]) started.
+[  +91 ms] > Task :permission_handler_android:preBuild UP-TO-DATE
+[   +3 ms] Skipping task ':permission_handler_android:preBuild' as it has no actions.
+[        ] Resolve mutations for :permission_handler_android:preDebugBuild (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :permission_handler_android:preDebugBuild (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] > Task :permission_handler_android:preDebugBuild UP-TO-DATE
+[        ] Skipping task ':permission_handler_android:preDebugBuild' as it has no actions.
+[        ] Resolve mutations for :permission_handler_android:mergeDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :permission_handler_android:mergeDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] > Task :permission_handler_android:mergeDebugAssets
+[        ] Caching disabled for task ':permission_handler_android:mergeDebugAssets' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Task ':permission_handler_android:mergeDebugAssets' is not up-to-date because:
+[        ]   Output property 'outputDir' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/assets/debug/mergeDebugAssets has been removed.
+[   +3 ms] The input changes require a full rebuild for incremental task ':permission_handler_android:mergeDebugAssets'.
+[        ] work action resolve mergeDebugAssets (project :permission_handler_android) (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] Resolve mutations for :speech_to_text:generateDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :speech_to_text:generateDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] > Task :speech_to_text:generateDebugAssets UP-TO-DATE
+[        ] Skipping task ':speech_to_text:generateDebugAssets' as it has no actions.
+[        ] Resolve mutations for :speech_to_text:preBuild (Thread[#161,Execution worker,5,main]) started.
+[        ] :speech_to_text:preBuild (Thread[#161,Execution worker,5,main]) started.
+[        ] > Task :speech_to_text:preBuild UP-TO-DATE
+[        ] Skipping task ':speech_to_text:preBuild' as it has no actions.
+[        ] Resolve mutations for :speech_to_text:preDebugBuild (Thread[#164,Execution worker Thread 3,5,main]) started.
+[        ] :speech_to_text:preDebugBuild (Thread[#164,Execution worker Thread 3,5,main]) started.
+[        ] > Task :speech_to_text:preDebugBuild UP-TO-DATE
+[        ] Skipping task ':speech_to_text:preDebugBuild' as it has no actions.
+[        ] Resolve mutations for :speech_to_text:mergeDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :speech_to_text:mergeDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[   +2 ms] > Task :speech_to_text:mergeDebugAssets
+[        ] Caching disabled for task ':speech_to_text:mergeDebugAssets' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Task ':speech_to_text:mergeDebugAssets' is not up-to-date because:
+[        ]   Output property 'outputDir' file /home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/intermediates/assets/debug/mergeDebugAssets has been removed.
+[        ] The input changes require a full rebuild for incremental task ':speech_to_text:mergeDebugAssets'.
+[        ] work action resolve mergeDebugAssets (project :speech_to_text) (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] Resolve mutations for :app:mergeDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :app:mergeDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[ +184 ms] > Task :app:mergeDebugAssets
+[        ] Caching disabled for task ':app:mergeDebugAssets' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Task ':app:mergeDebugAssets' is not up-to-date because:
+[   +1 ms]   Output property 'outputDir' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/assets/debug/mergeDebugAssets has been removed.
+[        ] The input changes require a full rebuild for incremental task ':app:mergeDebugAssets'.
+[        ] Resolve mutations for :app:copyFlutterAssetsDebug (Thread[#162,Execution worker Thread 2,5,main]) started.
+[   +1 ms] :app:copyFlutterAssetsDebug (Thread[#162,Execution worker Thread 2,5,main]) started.
+[ +195 ms] > Task :app:copyFlutterAssetsDebug
+[        ] Caching disabled for task ':app:copyFlutterAssetsDebug' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Task ':app:copyFlutterAssetsDebug' is not up-to-date because:
+[        ]   Output property 'destinationDir' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets has been removed.
+[        ]   Output property 'destinationDir' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/AssetManifest.bin has been removed.
+[        ]   Output property 'destinationDir' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/FontManifest.json has been removed.
+[        ]   and more...
+[        ] Resolve mutations for :app:generateDebugResources (Thread[#160,included builds,5,main]) started.
+[        ] :app:generateDebugResources (Thread[#160,included builds,5,main]) started.
+[        ] > Task :app:generateDebugResources
+[        ] Caching disabled for task ':app:generateDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Task ':app:generateDebugResources' is not up-to-date because:
+[        ]   Output property 'validationReportFile' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt has been removed.
+[        ] Resolve mutations for :app:packageDebugResources (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :app:packageDebugResources (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] > Task :app:packageDebugResources
+[        ] Caching disabled for task ':app:packageDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Task ':app:packageDebugResources' is not up-to-date because:
+[        ]   Output property 'dataBindingLayoutInfoOutFolder' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/data_binding_layout_info_type_package/debug/packageDebugResources/out has been removed.
+[        ]   Output property 'incrementalFolder' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/incremental/debug/packageDebugResources has been removed.
+[        ]   Output property 'incrementalFolder' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties has been removed.
+[        ]   and more...
+[        ] The input changes require a full rebuild for incremental task ':app:packageDebugResources'.
+[        ] [MergeResources] Inputs are non-incremental full task action.
+[        ] Resolve mutations for :flutter_tts:processDebugNavigationResources (Thread[#160,included builds,5,main]) started.
+[        ] :flutter_tts:processDebugNavigationResources (Thread[#160,included builds,5,main]) started.
+[        ] > Task :flutter_tts:processDebugNavigationResources
+[        ] Caching disabled for task ':flutter_tts:processDebugNavigationResources' because:
+[        ]   Build cache is disabled
+[        ] Task ':flutter_tts:processDebugNavigationResources' is not up-to-date because:
+[        ]   Output property 'outputDir' file /home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/generated/updated_navigation_xml/debug has been removed.
+[        ] work action resolve debug (project :flutter_tts) (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] Resolve mutations for :permission_handler_android:processDebugNavigationResources (Thread[#164,Execution worker Thread 3,5,main]) started.
+[        ] :permission_handler_android:processDebugNavigationResources (Thread[#161,Execution worker,5,main]) started.
+[        ] > Task :permission_handler_android:processDebugNavigationResources
+[        ] Caching disabled for task ':permission_handler_android:processDebugNavigationResources' because:
+[        ]   Build cache is disabled
+[        ] Task ':permission_handler_android:processDebugNavigationResources' is not up-to-date because:
+[        ]   Output property 'outputDir' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/generated/updated_navigation_xml/debug has been removed.
+[        ] work action resolve debug (project :permission_handler_android) (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] Resolve mutations for :speech_to_text:processDebugNavigationResources (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :speech_to_text:processDebugNavigationResources (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] > Task :speech_to_text:processDebugNavigationResources
+[        ] Caching disabled for task ':speech_to_text:processDebugNavigationResources' because:
+[        ]   Build cache is disabled
+[        ] Task ':speech_to_text:processDebugNavigationResources' is not up-to-date because:
+[        ]   Output property 'outputDir' file /home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/generated/updated_navigation_xml/debug has been removed.
+[        ] work action resolve debug (project :speech_to_text) (Thread[#161,Execution worker,5,main]) started.
+[        ] Resolve mutations for :app:processDebugNavigationResources (Thread[#160,included builds,5,main]) started.
+[        ] :app:processDebugNavigationResources (Thread[#160,included builds,5,main]) started.
+[        ] > Task :app:processDebugNavigationResources
+[        ] Caching disabled for task ':app:processDebugNavigationResources' because:
+[        ]   Build cache is disabled
+[        ] Task ':app:processDebugNavigationResources' is not up-to-date because:
+[        ]   Output property 'outputDir' file /home/suriya/KALEN_AI/kalen_vet/build/app/generated/updated_navigation_xml/debug has been removed.
+[        ] Resolve mutations for :app:parseDebugLocalResources (Thread[#161,Execution worker,5,main]) started.
+[        ] :app:parseDebugLocalResources (Thread[#161,Execution worker,5,main]) started.
+[        ] Resolve mutations for :flutter_tts:checkKotlinGradlePluginConfigurationErrors (Thread[#160,included builds,5,main]) started.
+[   +1 ms] :flutter_tts:checkKotlinGradlePluginConfigurationErrors (Thread[#160,included builds,5,main]) started.
+[        ] > Task :flutter_tts:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[        ] Skipping task ':flutter_tts:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+[  +92 ms] Resolve mutations for :flutter_tts:generateDebugResources (Thread[#160,included builds,5,main]) started.
+[        ] :flutter_tts:generateDebugResources (Thread[#160,included builds,5,main]) started.
+[        ] > Task :flutter_tts:generateDebugResources
+[        ] Caching disabled for task ':flutter_tts:generateDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Task ':flutter_tts:generateDebugResources' is not up-to-date because:
+[        ]   Output property 'validationReportFile' file /home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt has been removed.
+[        ] Resolve mutations for :flutter_tts:packageDebugResources (Thread[#160,included builds,5,main]) started.
+[        ] :flutter_tts:packageDebugResources (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] > Task :app:parseDebugLocalResources
+[        ] Caching disabled for task ':app:parseDebugLocalResources' because:
+[        ]   Build cache is disabled
+[        ] Task ':app:parseDebugLocalResources' is not up-to-date because:
+[        ]   Output property 'librarySymbolsFile' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt has been removed.
+[        ] The input changes require a full rebuild for incremental task ':app:parseDebugLocalResources'.
+[        ] > Task :flutter_tts:packageDebugResources
+[        ] Caching disabled for task ':flutter_tts:packageDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Task ':flutter_tts:packageDebugResources' is not up-to-date because:
+[        ]   Output property 'dataBindingLayoutInfoOutFolder' file /home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/intermediates/data_binding_layout_info_type_package/debug/packageDebugResources/out has been removed.
+[        ]   Output property 'generatedPngsOutputDir' file /home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/generated/res/pngs/debug has been removed.
+[        ]   Output property 'incrementalFolder' file /home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/intermediates/incremental/debug/packageDebugResources has been removed.
+[        ]   and more...
+[        ] The input changes require a full rebuild for incremental task ':flutter_tts:packageDebugResources'.
+[        ] [MergeResources] Inputs are non-incremental full task action.
+[   +3 ms] work action resolve packageDebugResources (project :flutter_tts) (Thread[#161,Execution worker,5,main]) started.
+[        ] Resolve mutations for :app:generateDebugRFile (Thread[#160,included builds,5,main]) started.
+[        ] :app:generateDebugRFile (Thread[#164,Execution worker Thread 3,5,main]) started.
+[        ] Resolve mutations for :flutter_tts:parseDebugLocalResources (Thread[#161,Execution worker,5,main]) started.
+[        ] :flutter_tts:parseDebugLocalResources (Thread[#161,Execution worker,5,main]) started.
+[        ] Resolve mutations for :flutter_tts:javaPreCompileDebug (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :flutter_tts:javaPreCompileDebug (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] > Task :app:generateDebugRFile
+[        ] Caching disabled for task ':app:generateDebugRFile' because:
+[        ]   Build cache is disabled
+[        ] Task ':app:generateDebugRFile' is not up-to-date because:
+[   +2 ms]   Output property 'RClassOutputJar' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar has been removed.
+[        ]   Output property 'symbolsWithPackageNameOutputFile' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt has been removed.
+[        ]   Output property 'textSymbolOutputFileProperty' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/compile_symbol_list/debug/generateDebugRFile/R.txt has been removed.
+[        ] The input changes require a full rebuild for incremental task ':app:generateDebugRFile'.
+[   +1 ms] > Task :flutter_tts:javaPreCompileDebug
+[        ] Caching disabled for task ':flutter_tts:javaPreCompileDebug' because:
+[        ]   Build cache is disabled
+[   +2 ms] Task ':flutter_tts:javaPreCompileDebug' is not up-to-date because:
+[        ]   Output property 'annotationProcessorListFile' file /home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json has been removed.
+[   +1 ms] Resolve mutations for :permission_handler_android:checkKotlinGradlePluginConfigurationErrors (Thread[#164,Execution worker Thread 3,5,main]) started.
+[        ] :permission_handler_android:checkKotlinGradlePluginConfigurationErrors (Thread[#164,Execution worker Thread 3,5,main]) started.
+[        ] > Task :permission_handler_android:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[        ] Skipping task ':permission_handler_android:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+[   +1 ms] Resolve mutations for :permission_handler_android:generateDebugResources (Thread[#164,Execution worker Thread 3,5,main]) started.
+[        ] :permission_handler_android:generateDebugResources (Thread[#164,Execution worker Thread 3,5,main]) started.
+[  +76 ms] > Task :flutter_tts:parseDebugLocalResources
+[        ] Caching disabled for task ':flutter_tts:parseDebugLocalResources' because:
+[        ]   Build cache is disabled
+[        ] Task ':flutter_tts:parseDebugLocalResources' is not up-to-date because:
+[        ]   Output property 'librarySymbolsFile' file /home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt has been removed.
+[        ] The input changes require a full rebuild for incremental task ':flutter_tts:parseDebugLocalResources'.
+[   +1 ms] > Task :permission_handler_android:generateDebugResources
+[        ] Caching disabled for task ':permission_handler_android:generateDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Task ':permission_handler_android:generateDebugResources' is not up-to-date because:
+[        ]   Output property 'validationReportFile' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt has been removed.
+[        ] Resolve mutations for :flutter_tts:generateDebugRFile (Thread[#164,Execution worker Thread 3,5,main]) started.
+[   +2 ms] :flutter_tts:generateDebugRFile (Thread[#164,Execution worker Thread 3,5,main]) started.
+[        ] Resolve mutations for :permission_handler_android:packageDebugResources (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :permission_handler_android:packageDebugResources (Thread[#160,included builds,5,main]) started.
+[        ] > Task :flutter_tts:generateDebugRFile
+[        ] Caching disabled for task ':flutter_tts:generateDebugRFile' because:
+[        ]   Build cache is disabled
+[   +2 ms] Task ':flutter_tts:generateDebugRFile' is not up-to-date because:
+[        ]   Output property 'RClassOutputJar' file /home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar has been removed.
+[        ]   Output property 'symbolsWithPackageNameOutputFile' file /home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt has been removed.
+[        ]   Output property 'textSymbolOutputFileProperty' file /home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/intermediates/compile_symbol_list/debug/generateDebugRFile/R.txt has been removed.
+[        ] The input changes require a full rebuild for incremental task ':flutter_tts:generateDebugRFile'.
+[        ] > Task :permission_handler_android:packageDebugResources
+[        ] Caching disabled for task ':permission_handler_android:packageDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Task ':permission_handler_android:packageDebugResources' is not up-to-date because:
+[        ]   Output property 'dataBindingLayoutInfoOutFolder' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/data_binding_layout_info_type_package/debug/packageDebugResources/out has been removed.
+[        ]   Output property 'generatedPngsOutputDir' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/generated/res/pngs/debug has been removed.
+[        ]   Output property 'incrementalFolder' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/incremental/debug/packageDebugResources has been removed.
+[        ]   and more...
+[        ] The input changes require a full rebuild for incremental task ':permission_handler_android:packageDebugResources'.
+[        ] [MergeResources] Inputs are non-incremental full task action.
+[        ] work action resolve packageDebugResources (project :permission_handler_android) (Thread[#160,included builds,5,main]) started.
+[        ] work action resolve package-aware-r.txt (project :flutter_tts) (Thread[#160,included builds,5,main]) started.
+[        ] Resolve mutations for :flutter_tts:compileDebugKotlin (Thread[#160,included builds,5,main]) started.
+[        ] :flutter_tts:compileDebugKotlin (Thread[#164,Execution worker Thread 3,5,main]) started.
+[ +185 ms] Resolve mutations for :permission_handler_android:parseDebugLocalResources (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :permission_handler_android:parseDebugLocalResources (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] Resolve mutations for :permission_handler_android:javaPreCompileDebug (Thread[#161,Execution worker,5,main]) started.
+[        ] :permission_handler_android:javaPreCompileDebug (Thread[#161,Execution worker,5,main]) started.
+[        ] Resolve mutations for :speech_to_text:checkKotlinGradlePluginConfigurationErrors (Thread[#160,included builds,5,main]) started.
+[        ] :speech_to_text:checkKotlinGradlePluginConfigurationErrors (Thread[#160,included builds,5,main]) started.
+[        ] > Task :speech_to_text:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[        ] Skipping task ':speech_to_text:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+[        ] Resolve mutations for :speech_to_text:generateDebugResources (Thread[#160,included builds,5,main]) started.
+[        ] :speech_to_text:generateDebugResources (Thread[#160,included builds,5,main]) started.
+[  +98 ms] > Task :permission_handler_android:javaPreCompileDebug
+[   +2 ms] Caching disabled for task ':permission_handler_android:javaPreCompileDebug' because:
+[        ]   Build cache is disabled
+[        ] Task ':permission_handler_android:javaPreCompileDebug' is not up-to-date because:
+[        ]   Output property 'annotationProcessorListFile' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json has been removed.
+[        ] > Task :speech_to_text:generateDebugResources
+[        ] Caching disabled for task ':speech_to_text:generateDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Task ':speech_to_text:generateDebugResources' is not up-to-date because:
+[        ]   Output property 'validationReportFile' file /home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt has been removed.
+[        ] Resolve mutations for :speech_to_text:packageDebugResources (Thread[#160,included builds,5,main]) started.
+[        ] :speech_to_text:packageDebugResources (Thread[#160,included builds,5,main]) started.
+[        ] > Task :permission_handler_android:parseDebugLocalResources
+[        ] Caching disabled for task ':permission_handler_android:parseDebugLocalResources' because:
+[        ]   Build cache is disabled
+[        ] Task ':permission_handler_android:parseDebugLocalResources' is not up-to-date because:
+[        ]   Output property 'librarySymbolsFile' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt has been removed.
+[        ] The input changes require a full rebuild for incremental task ':permission_handler_android:parseDebugLocalResources'.
+[        ] > Task :speech_to_text:packageDebugResources
+[        ] Caching disabled for task ':speech_to_text:packageDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Task ':speech_to_text:packageDebugResources' is not up-to-date because:
+[        ]   Output property 'dataBindingLayoutInfoOutFolder' file /home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/intermediates/data_binding_layout_info_type_package/debug/packageDebugResources/out has been removed.
+[        ]   Output property 'generatedPngsOutputDir' file /home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/generated/res/pngs/debug has been removed.
+[        ]   Output property 'incrementalFolder' file /home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/intermediates/incremental/debug/packageDebugResources has been removed.
+[        ]   and more...
+[        ] The input changes require a full rebuild for incremental task ':speech_to_text:packageDebugResources'.
+[        ] [MergeResources] Inputs are non-incremental full task action.
+[        ] work action resolve packageDebugResources (project :speech_to_text) (Thread[#160,included builds,5,main]) started.
+[        ] Resolve mutations for :permission_handler_android:generateDebugRFile (Thread[#160,included builds,5,main]) started.
+[        ] :permission_handler_android:generateDebugRFile (Thread[#160,included builds,5,main]) started.
+[        ] Resolve mutations for :speech_to_text:parseDebugLocalResources (Thread[#161,Execution worker,5,main]) started.
+[        ] :speech_to_text:parseDebugLocalResources (Thread[#161,Execution worker,5,main]) started.
+[        ] Resolve mutations for :speech_to_text:javaPreCompileDebug (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :speech_to_text:javaPreCompileDebug (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] > Task :permission_handler_android:generateDebugRFile
+[        ] Caching disabled for task ':permission_handler_android:generateDebugRFile' because:
+[        ]   Build cache is disabled
+[        ] Task ':permission_handler_android:generateDebugRFile' is not up-to-date because:
+[        ]   Output property 'RClassOutputJar' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar has been removed.
+[   +2 ms]   Output property 'symbolsWithPackageNameOutputFile' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt has been removed.
+[        ]   Output property 'textSymbolOutputFileProperty' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/compile_symbol_list/debug/generateDebugRFile/R.txt has been removed.
+[        ] The input changes require a full rebuild for incremental task ':permission_handler_android:generateDebugRFile'.
+[        ] > Task :speech_to_text:javaPreCompileDebug
+[        ] Caching disabled for task ':speech_to_text:javaPreCompileDebug' because:
+[        ]   Build cache is disabled
+[        ] Task ':speech_to_text:javaPreCompileDebug' is not up-to-date because:
+[        ]   Output property 'annotationProcessorListFile' file /home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json has been removed.
+[        ] work action resolve package-aware-r.txt (project :permission_handler_android) (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] Resolve mutations for :permission_handler_android:compileDebugKotlin (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :permission_handler_android:compileDebugKotlin (Thread[#162,Execution worker Thread 2,5,main]) started.
+[  +87 ms] > Task :speech_to_text:parseDebugLocalResources
+[        ] Caching disabled for task ':speech_to_text:parseDebugLocalResources' because:
+[        ]   Build cache is disabled
+[        ] Task ':speech_to_text:parseDebugLocalResources' is not up-to-date because:
+[        ]   Output property 'librarySymbolsFile' file /home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt has been removed.
+[        ] The input changes require a full rebuild for incremental task ':speech_to_text:parseDebugLocalResources'.
+[        ] > Task :permission_handler_android:compileDebugKotlin NO-SOURCE
+[        ] Skipping task ':permission_handler_android:compileDebugKotlin' as it has no source files and no previous output files.
+[        ] Resolve mutations for :permission_handler_android:compileDebugJavaWithJavac (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :permission_handler_android:compileDebugJavaWithJavac (Thread[#162,Execution worker Thread 2,5,main]) started.
+[+1398 ms] > Task :permission_handler_android:compileDebugJavaWithJavac
+[        ] Custom actions are attached to task ':permission_handler_android:compileDebugJavaWithJavac'.
+[        ] Caching disabled for task ':permission_handler_android:compileDebugJavaWithJavac' because:
+[        ]   Build cache is disabled
+[        ] Task ':permission_handler_android:compileDebugJavaWithJavac' is not up-to-date because:
+[        ]   Output property 'destinationDirectory' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/javac/debug/compileDebugJavaWithJavac/classes has been removed.
+[        ]   Output property 'destinationDirectory' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com has been removed.
+[        ]   Output property 'destinationDirectory' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/baseflow has been removed.
+[        ]   and more...
+[        ] The input changes require a full rebuild for incremental task ':permission_handler_android:compileDebugJavaWithJavac'.
+[        ] Compilation mode: in-process compilation
+[        ] Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+[        ] Compiling with toolchain '/home/suriya/Downloads/android-studio/jbr'.
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/permission_handler_android-14.0.0/android/src/main/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/permission_handler_android-14.0.0/android/src/debug/java', not found
+[        ] Compiling with JDK Java compiler API.
+[        ] Class dependency analysis for incremental compilation took 0.001 secs.
+[        ] Created classpath snapshot for incremental compilation in 0.036 secs.
+[        ] Resolve mutations for :permission_handler_android:bundleLibCompileToJarDebug (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :permission_handler_android:bundleLibCompileToJarDebug (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] Resolve mutations for :speech_to_text:generateDebugRFile (Thread[#161,Execution worker,5,main]) started.
+[        ] :speech_to_text:generateDebugRFile (Thread[#161,Execution worker,5,main]) started.
+[        ] > Task :permission_handler_android:bundleLibCompileToJarDebug
+[        ] Caching disabled for task ':permission_handler_android:bundleLibCompileToJarDebug' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Task ':permission_handler_android:bundleLibCompileToJarDebug' is not up-to-date because:
+[        ]   Output property 'output' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar has been removed.
+[        ] work action resolve classes.jar (project :permission_handler_android) (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] Resolve mutations for :app:javaPreCompileDebug (Thread[#160,included builds,5,main]) started.
+[        ] :app:javaPreCompileDebug (Thread[#160,included builds,5,main]) started.
+[        ] Resolve mutations for :app:compressDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] :app:compressDebugAssets (Thread[#162,Execution worker Thread 2,5,main]) started.
+[        ] > Task :app:javaPreCompileDebug
+[        ] Caching disabled for task ':app:javaPreCompileDebug' because:
+[        ]   Build cache is disabled
+[        ] Task ':app:javaPreCompileDebug' is not up-to-date because:
+[        ]   Output property 'annotationProcessorListFile' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json has been removed.
+[        ] > Task :speech_to_text:generateDebugRFile
+[        ] Caching disabled for task ':speech_to_text:generateDebugRFile' because:
+[        ]   Build cache is disabled
+[        ] Task ':speech_to_text:generateDebugRFile' is not up-to-date because:
+[        ]   Output property 'RClassOutputJar' file /home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar has been removed.
+[        ]   Output property 'symbolsWithPackageNameOutputFile' file /home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt has been removed.
+[        ]   Output property 'textSymbolOutputFileProperty' file /home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/intermediates/compile_symbol_list/debug/generateDebugRFile/R.txt has been removed.
+[        ] The input changes require a full rebuild for incremental task ':speech_to_text:generateDebugRFile'.
+[  +91 ms] work action resolve package-aware-r.txt (project :speech_to_text) (Thread[#160,included builds,5,main]) started.
+[        ] Resolve mutations for :speech_to_text:compileDebugKotlin (Thread[#160,included builds,5,main]) started.
+[        ] :speech_to_text:compileDebugKotlin (Thread[#160,included builds,5,main]) started.
+[ +100 ms] > Task :flutter_tts:compileDebugKotlin
+[        ] Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :flutter_tts:compileDebugAndroidTestKotlin
+[        ] GradleBuildProject.Builder should not be accessed through AnalyticsConfiguratorService after AnalyticsService is created. Analytics information of this build might be incomplete.
+[        ] Caching disabled for task ':flutter_tts:compileDebugKotlin' because:
+[        ]   Build cache is disabled
+[        ] Task ':flutter_tts:compileDebugKotlin' is not up-to-date because:
+[        ]   Output property 'classpathSnapshotProperties.classpathSnapshotDir' file /home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/kotlin/compileDebugKotlin/classpath-snapshot has been removed.
+[        ]   Output property 'classpathSnapshotProperties.classpathSnapshotDir' file /home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin has been removed.
+[        ]   Output property 'destinationDirectory' file /home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/tmp/kotlin-classes/debug has been removed.
+[        ]   and more...
+[        ] The input changes require a full rebuild for incremental task ':flutter_tts:compileDebugKotlin'.
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[   +2 ms] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[   +4 ms] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[   +2 ms] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[   +6 ms] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/java', not found
+[   +1 ms] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[   +3 ms] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/debug/kotlin', not found
+[        ] Kotlin source files: /home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/kotlin/com/eyedeadevelopment/fluttertts/FlutterTtsPlugin.kt
+[        ] Java source files: 
+[        ] Script source files: 
+[        ] Script file extensions: 
+[        ] Using Kotlin/JVM incremental compilation
+[        ] [KOTLIN] Kotlin compilation 'jdkHome' argument: null
+[        ] i: Options for KOTLIN DAEMON: IncrementalCompilationOptions(super=CompilationOptions(compilerMode=INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0], reportSeverity=2, requestedCompilationResults=[0], kotlinScriptExtensions=[], generateCompilerRefIndex=false), sourceChanges=org.jetbrains.kotlin.buildtools.api.SourcesChanges$Unknown@579d9640, classpathChanges=NotAvailableDueToMissingClasspathSnapshot, workingDir=/home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/kotlin/compileDebugKotlin/cacheable, multiModuleICSettings=null, icFeatures=IncrementalCompilationFeatures(usePreciseJavaTracking=true, withAbiSnapshot=false, preciseCompilationResultsBackup=true, keepIncrementalCompilationCachesInMemory=true, enableUnsafeIncrementalCompilationForMultiplatform=false, enableMonotonousIncrementalCompileSetExpansion=true), outputFiles=[/home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/tmp/kotlin-classes/debug, /home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/kotlin/compileDebugKotlin/cacheable, /home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/kotlin/compileDebugKotlin/local-state])
+[ +165 ms] Resolve mutations for :permission_handler_android:bundleLibRuntimeToJarDebug (Thread[#161,Execution worker,5,main]) started.
+[        ] :permission_handler_android:bundleLibRuntimeToJarDebug (Thread[#161,Execution worker,5,main]) started.
+[ +199 ms] > Task :permission_handler_android:bundleLibRuntimeToJarDebug
+[        ] Caching disabled for task ':permission_handler_android:bundleLibRuntimeToJarDebug' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Task ':permission_handler_android:bundleLibRuntimeToJarDebug' is not up-to-date because:
+[        ]   Output property 'output' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar has been removed.
+[        ] work action resolve classes.jar (project :permission_handler_android) (Thread[#161,Execution worker,5,main]) started.
+[        ] IdentityTransform (Thread[#161,Execution worker,5,main]) started.
+[        ] DexingNoClasspathTransform (Thread[#161,Execution worker,5,main]) started.
+[ +998 ms] > Transform classes.jar (project :permission_handler_android) with DexingNoClasspathTransform
+[        ] Caching disabled for DexingNoClasspathTransform: /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar because:
+[        ]   Build cache is disabled
+[        ] DexingNoClasspathTransform: /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar is not up-to-date because:
+[        ]   Output property 'outputDirectory' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/.transforms/91aa2c606a2a3f8e5bc2da9aef4ba1b3/transformed has been removed.
+[        ]   Output property 'outputDirectory' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/.transforms/91aa2c606a2a3f8e5bc2da9aef4ba1b3/transformed/classes has been removed.
+[        ]   Output property 'outputDirectory' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/.transforms/91aa2c606a2a3f8e5bc2da9aef4ba1b3/transformed/classes/classes_dex has been removed.
+[        ]   and more...
+[        ] The input changes require a full rebuild for incremental DexingNoClasspathTransform: /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar.
+[        ] Running dexing transform non-incrementally for '/home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar'
+[   +1 ms] DexingOutputSplitTransform (Thread[#161,Execution worker,5,main]) started.
+[  +95 ms] > Transform classes.jar (project :permission_handler_android) with DexingOutputSplitTransform
+[        ] Caching disabled for DexingOutputSplitTransform: /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/.transforms/91aa2c606a2a3f8e5bc2da9aef4ba1b3/transformed/classes because:
+[        ]   Build cache is disabled
+[        ]   Caching not enabled.
+[        ] Resolve mutations for :app:desugarDebugFileDependencies (Thread[#161,Execution worker,5,main]) started.
+[        ] :app:desugarDebugFileDependencies (Thread[#161,Execution worker,5,main]) started.
+[  +98 ms] > Task :app:desugarDebugFileDependencies
+[        ] Caching disabled for task ':app:desugarDebugFileDependencies' because:
+[        ]   Build cache is disabled
+[        ] Task ':app:desugarDebugFileDependencies' is not up-to-date because:
+[        ]   Output property 'outputDirectory' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/external_file_lib_dex_archives/debug/desugarDebugFileDependencies has been removed.
+[        ]   Output property 'outputGlobalSynthetics' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/global_synthetics_file_lib/debug/desugarDebugFileDependencies has been removed.
+[        ] Resolve mutations for :flutter_tts:writeDebugAarMetadata (Thread[#161,Execution worker,5,main]) started.
+[        ] :flutter_tts:writeDebugAarMetadata (Thread[#161,Execution worker,5,main]) started.
+[   +1 ms] > Task :flutter_tts:writeDebugAarMetadata
+[        ] Caching disabled for task ':flutter_tts:writeDebugAarMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':flutter_tts:writeDebugAarMetadata' is not up-to-date because:
+[        ]   Output property 'output' file /home/suriya/KALEN_AI/kalen_vet/build/flutter_tts/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties has been removed.
+[        ] work action resolve aar-metadata.properties (project :flutter_tts) (Thread[#161,Execution worker,5,main]) started.
+[        ] Resolve mutations for :permission_handler_android:writeDebugAarMetadata (Thread[#161,Execution worker,5,main]) started.
+[        ] :permission_handler_android:writeDebugAarMetadata (Thread[#161,Execution worker,5,main]) started.
+[        ] > Task :permission_handler_android:writeDebugAarMetadata
+[        ] Caching disabled for task ':permission_handler_android:writeDebugAarMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[   +1 ms] Task ':permission_handler_android:writeDebugAarMetadata' is not up-to-date because:
+[        ]   Output property 'output' file /home/suriya/KALEN_AI/kalen_vet/build/permission_handler_android/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties has been removed.
+[   +1 ms] work action resolve aar-metadata.properties (project :permission_handler_android) (Thread[#161,Execution worker,5,main]) started.
+[        ] Resolve mutations for :speech_to_text:writeDebugAarMetadata (Thread[#161,Execution worker,5,main]) started.
+[        ] :speech_to_text:writeDebugAarMetadata (Thread[#161,Execution worker,5,main]) started.
+[        ] > Task :speech_to_text:writeDebugAarMetadata
+[        ] Caching disabled for task ':speech_to_text:writeDebugAarMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':speech_to_text:writeDebugAarMetadata' is not up-to-date because:
+[        ]   Output property 'output' file /home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties has been removed.
+[        ] work action resolve aar-metadata.properties (project :speech_to_text) (Thread[#161,Execution worker,5,main]) started.
+[        ] Resolve mutations for :app:checkDebugAarMetadata (Thread[#161,Execution worker,5,main]) started.
+[        ] :app:checkDebugAarMetadata (Thread[#161,Execution worker,5,main]) started.
+[        ] > Task :app:checkDebugAarMetadata FAILED
+[        ] Caching disabled for task ':app:checkDebugAarMetadata' because:
+[   +3 ms]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:checkDebugAarMetadata' is not up-to-date because:
+[        ]   Output property 'dummyOutputDirectory' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/aar_metadata_check/debug/checkDebugAarMetadata has been removed.
+[ +181 ms] > Task :app:compressDebugAssets
+[        ] Caching disabled for task ':app:compressDebugAssets' because:
+[        ]   Build cache is disabled
+[        ] Task ':app:compressDebugAssets' is not up-to-date because:
+[        ]   Output property 'outputDir' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out has been removed.
+[        ]   Output property 'outputDir' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets has been removed.
+[        ]   Output property 'outputDir' file /home/suriya/KALEN_AI/kalen_vet/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets has been removed.
+[        ]   and more...
+[        ] The input changes require a full rebuild for incremental task ':app:compressDebugAssets'.
+[ +100 ms] > Task :speech_to_text:compileDebugKotlin
+[        ] Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :speech_to_text:compileDebugAndroidTestKotlin
+[        ] GradleBuildProject.Builder should not be accessed through AnalyticsConfiguratorService after AnalyticsService is created. Analytics information of this build might be incomplete.
+[        ] Caching disabled for task ':speech_to_text:compileDebugKotlin' because:
+[        ]   Build cache is disabled
+[        ] Task ':speech_to_text:compileDebugKotlin' is not up-to-date because:
+[        ]   Output property 'classpathSnapshotProperties.classpathSnapshotDir' file /home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/kotlin/compileDebugKotlin/classpath-snapshot has been removed.
+[        ]   Output property 'classpathSnapshotProperties.classpathSnapshotDir' file /home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin has been removed.
+[        ]   Output property 'destinationDirectory' file /home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/tmp/kotlin-classes/debug has been removed.
+[        ]   and more...
+[        ] The input changes require a full rebuild for incremental task ':speech_to_text:compileDebugKotlin'.
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[   +1 ms] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[   +2 ms] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[   +1 ms] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[   +1 ms] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[   +1 ms] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/java', not found
+[        ] file or directory '/home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/debug/kotlin', not found
+[        ] Kotlin source files: /home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/kotlin/com/csdcorp/speech_to_text/SpeechToTextPlugin.kt
+[        ] Java source files: 
+[        ] Script source files: 
+[        ] Script file extensions: 
+[        ] Using Kotlin/JVM incremental compilation
+[        ] [KOTLIN] Kotlin compilation 'jdkHome' argument: null
+[        ] i: Options for KOTLIN DAEMON: IncrementalCompilationOptions(super=CompilationOptions(compilerMode=INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0], reportSeverity=2, requestedCompilationResults=[0], kotlinScriptExtensions=[], generateCompilerRefIndex=false), sourceChanges=org.jetbrains.kotlin.buildtools.api.SourcesChanges$Unknown@579d9640, classpathChanges=NotAvailableDueToMissingClasspathSnapshot, workingDir=/home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/kotlin/compileDebugKotlin/cacheable, multiModuleICSettings=null, icFeatures=IncrementalCompilationFeatures(usePreciseJavaTracking=true, withAbiSnapshot=false, preciseCompilationResultsBackup=true, keepIncrementalCompilationCachesInMemory=true, enableUnsafeIncrementalCompilationForMultiplatform=false, enableMonotonousIncrementalCompileSetExpansion=true), outputFiles=[/home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/tmp/kotlin-classes/debug, /home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/kotlin/compileDebugKotlin/cacheable, /home/suriya/KALEN_AI/kalen_vet/build/speech_to_text/kotlin/compileDebugKotlin/local-state])
+[+1573 ms] > Task :flutter_tts:compileDebugKotlin
+[        ] w: file:///home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/kotlin/com/eyedeadevelopment/fluttertts/FlutterTtsPlugin.kt:721:60 Unnecessary non-null assertion (!!) on a non-null receiver of type 'File'.
+[        ] w: file:///home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/kotlin/com/eyedeadevelopment/fluttertts/FlutterTtsPlugin.kt:739:60 Unnecessary non-null assertion (!!) on a non-null receiver of type 'File'.
+[        ] w: file:///home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/kotlin/com/eyedeadevelopment/fluttertts/FlutterTtsPlugin.kt:804:27 'fun requestAudioFocus(p0: AudioManager.OnAudioFocusChangeListener!, p1: Int, p2: Int): Int' is deprecated. Deprecated in Java.
+[        ] w: file:///home/suriya/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/android/src/main/kotlin/com/eyedeadevelopment/fluttertts/FlutterTtsPlugin.kt:812:27 'fun abandonAudioFocus(p0: AudioManager.OnAudioFocusChangeListener!): Int' is deprecated. Deprecated in Java.
+[        ] i: Finished executing kotlin compiler using DAEMON strategy
+[ +498 ms] > Task :speech_to_text:compileDebugKotlin
+[        ] w: file:///home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/kotlin/com/csdcorp/speech_to_text/SpeechToTextPlugin.kt:381:23 Unnecessary safe call on a non-null receiver of type 'SpeechRecognizer'.
+[        ] w: file:///home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/kotlin/com/csdcorp/speech_to_text/SpeechToTextPlugin.kt:386:35 Unnecessary safe call on a non-null receiver of type 'SpeechRecognizer'.
+[        ] w: file:///home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/kotlin/com/csdcorp/speech_to_text/SpeechToTextPlugin.kt:390:35 Unnecessary safe call on a non-null receiver of type 'SpeechRecognizer'.
+[        ] w: file:///home/suriya/.pub-cache/hosted/pub.dev/speech_to_text-7.4.0/android/src/main/kotlin/com/csdcorp/speech_to_text/SpeechToTextPlugin.kt:575:45 'static fun getDefaultAdapter(): BluetoothAdapter!' is deprecated. Deprecated in Java.
+[  +99 ms] i: Finished executing kotlin compiler using DAEMON strategy
+[        ] Build 0dbbeed8-a14f-49c8-a9f3-7e14968dd007 is closed
+[  +99 ms] Build 723f468f-48a6-4a47-b85f-aa5cfed11065 is closed
+[        ] [Incubating] Problems report is available at: file:///home/suriya/KALEN_AI/kalen_vet/build/reports/problems/problems-report.html
+[   +1 ms] FAILURE: Build failed with an exception.
+[        ] * What went wrong:
+[        ] Execution failed for task ':app:checkDebugAarMetadata'.
+[        ] > A failure occurred while executing com.android.build.gradle.internal.tasks.CheckAarMetadataWorkAction
+[        ]    > An issue was found when checking AAR metadata:
+[        ]        1.  Dependency ':permission_handler_android' requires libraries and applications that
+[        ]            depend on it to compile against version 37 or later of the
+[        ]            Android APIs.
+[        ]            :app is currently compiled against android-36.
+[        ]            Also, the maximum recommended compile SDK version for Android Gradle
+[        ]            plugin 9.0.1 is 36.
+[        ]            Recommended action: Update this project's version of the Android Gradle
+[        ]            plugin to one that supports 37, then update this project to use
+[        ]            compileSdk of at least 37.
+[        ]            Note that updating a library or application's compileSdk (which
+[        ]            allows newer APIs to be used) can be done separately from updating
+[        ]            targetSdk (which opts the app in to new runtime behavior) and
+[        ]            minSdk (which determines which devices the app can be installed
+[        ]            on).
+[        ] * Try:
+[        ] > Run with --debug option to get more log output.
+[        ] > Run with --scan to generate a Build Scan (Powered by Develocity).
+[        ] > Get more help at https://help.gradle.org.
+[        ] * Exception is:
+[        ] org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:checkDebugAarMetadata'.
+[        ] 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:135)
+[        ] 	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:288)
+[        ] 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:133)
+[        ] 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:121)
+[        ] 	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:41)
+[        ] 	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+[        ] 	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+[        ] 	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+[        ] 	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+[        ] 	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+[        ] 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+[        ] 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+[        ] 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+[   +1 ms] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+[        ] 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+[        ] 	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:45)
+[        ] 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:355)
+[        ] 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:342)
+[        ] 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:338)
+[        ] 	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:84)
+[        ] 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:338)
+[        ] 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:327)
+[        ] 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
+[        ] 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+[        ] 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+[        ] 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+[        ] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+[        ] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+[        ] 	at java.base/java.lang.Thread.run(Unknown Source)
+[        ] Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing com.android.build.gradle.internal.tasks.CheckAarMetadataWorkAction
+[   +2 ms] 	at org.gradle.workers.internal.DefaultWorkerExecutor$WorkItemExecution.waitForCompletion(DefaultWorkerExecutor.java:289)
+[        ] 	at org.gradle.internal.work.DefaultAsyncWorkTracker.lambda$waitForItemsAndGatherFailures$2(DefaultAsyncWorkTracker.java:130)
+[        ] 	at org.gradle.internal.Factories$1.create(Factories.java:31)
+[        ] 	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:335)
+[        ] 	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:318)
+[        ] 	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLock(DefaultWorkerLeaseService.java:323)
+[        ] 	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:126)
+[   +1 ms] 	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:92)
+[        ] 	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForAll(DefaultAsyncWorkTracker.java:78)
+[        ] 	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForCompletion(DefaultAsyncWorkTracker.java:66)
+[        ] 	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:260)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+[   +3 ms] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+[        ] 	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:237)
+[        ] 	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:220)
+[        ] 	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:203)
+[        ] 	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:170)
+[        ] 	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+[        ] 	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+[        ] 	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+[        ] 	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+[        ] 	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+[        ] 	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+[        ] 	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:42)
+[        ] 	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:75)
+[        ] 	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+[        ] 	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
+[        ] 	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
+[        ] 	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:68)
+[        ] 	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:38)
+[        ] 	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
+[        ] 	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
+[        ] 	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:69)
+[        ] 	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:46)
+[        ] 	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:39)
+[        ] 	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:28)
+[        ] 	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
+[        ] 	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:75)
+[        ] 	at org.gradle.internal.Either$Right.fold(Either.java:176)
+[        ] 	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
+[        ] 	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
+[        ] 	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:48)
+[        ] 	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:46)
+[        ] 	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:35)
+[        ] 	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:75)
+[        ] 	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:53)
+[        ] 	at java.base/java.util.Optional.orElseGet(Unknown Source)
+[        ] 	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:53)
+[        ] 	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:35)
+[        ] 	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+[        ] 	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+[        ] 	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:49)
+[        ] 	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:27)
+[        ] 	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:71)
+[        ] 	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:39)
+[        ] 	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:64)
+[        ] 	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:35)
+[        ] 	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:62)
+[        ] 	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:40)
+[        ] 	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:76)
+[        ] 	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:45)
+[        ] 	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:136)
+[        ] 	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:61)
+[        ] 	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:38)
+[        ] 	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+[        ] 	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+[        ] 	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+[        ] 	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
+[        ] 	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
+[        ] 	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+[        ] 	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:297)
+[        ] 	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+[        ] 	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+[        ] 	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+[        ] 	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+[        ] 	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+[        ] 	at java.base/java.util.Optional.orElseGet(Unknown Source)
+[        ] 	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+[        ] 	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+[        ] 	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+[        ] 	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+[        ] 	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:47)
+[        ] 	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:34)
+[        ] 	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:64)
+[        ] 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:132)
+[        ] 	... 32 more
+[        ] Caused by: java.lang.RuntimeException: An issue was found when checking AAR metadata:
+[        ]   1.  Dependency ':permission_handler_android' requires libraries and applications that
+[        ]       depend on it to compile against version 37 or later of the
+[        ]       Android APIs.
+[        ]       :app is currently compiled against android-36.
+[        ]       Also, the maximum recommended compile SDK version for Android Gradle
+[        ]       plugin 9.0.1 is 36.
+[        ]       Recommended action: Update this project's version of the Android Gradle
+[        ]       plugin to one that supports 37, then update this project to use
+[        ]       compileSdk of at least 37.
+[        ]       Note that updating a library or application's compileSdk (which
+[        ]       allows newer APIs to be used) can be done separately from updating
+[        ]       targetSdk (which opts the app in to new runtime behavior) and
+[        ]       minSdk (which determines which devices the app can be installed
+[        ]       on).
+[        ] 	at com.android.build.gradle.internal.tasks.CheckAarMetadataWorkAction.execute(CheckAarMetadataTask.kt:288)
+[        ] 	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:68)
+[        ] 	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+[        ] 	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+[        ] 	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+[        ] 	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+[        ] 	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+[        ] 	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+[        ] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+[        ] 	at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+[        ] 	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+[        ] 	at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:176)
+[        ] 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+[        ] 	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:194)
+[        ] 	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:127)
+[        ] 	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:169)
+[        ] 	at org.gradle.internal.Factories$1.create(Factories.java:31)
+[        ] 	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
+[        ] 	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+[        ] 	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:132)
+[        ] 	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:164)
+[        ] 	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:133)
+[        ] 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+[        ] 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+[        ] 	... 5 more
+[        ] BUILD FAILED in 26s
+[        ] Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+[        ] You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+[        ] For more on this, please refer to https://docs.gradle.org/9.1.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+[        ] 47 actionable tasks: 42 executed, 5 up-to-date
+[  +87 ms] Running Gradle task 'assembleDebug'... (completed in 26.6s)
+[  +29 ms] Error: Gradle task assembleDebug failed with exit code 1
+[        ] "flutter run" took 28,616ms.
+[  +45 ms] 
+           #0      throwToolExit (package:flutter_tools/src/base/common.dart:34:3)
+           #1      RunCommand.runCommand (package:flutter_tools/src/commands/run.dart:940:9)
+           <asynchronous suspension>
+           #2      FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1630:27)
+           <asynchronous suspension>
+           #3      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+           <asynchronous suspension>
+           #4      CommandRunner.runCommand (package:args/command_runner.dart:212:13)
+           <asynchronous suspension>
+           #5      FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:496:9)
+           <asynchronous suspension>
+           #6      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+           <asynchronous suspension>
+           #7      FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:431:5)
+           <asynchronous suspension>
+           #8      FlutterCommandRunner.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:307:33)
+           <asynchronous suspension>
+           #9      run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:104:11)
+           <asynchronous suspension>
+           #10     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+           <asynchronous suspension>
+           #11     main (package:flutter_tools/executable.dart:103:3)
+           <asynchronous suspension>
+
+
+[        ] Running 3 shutdown hooks
+[   +7 ms] Shutdown hooks complete
+[ +247 ms] exiting with code 1

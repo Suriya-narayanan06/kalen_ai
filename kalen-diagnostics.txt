@@ -1,0 +1,8 @@
+KALEN AUTO-DEV DIAGNOSTIC
+=========================
+
+Flutter analyze:
+Analyzing kalen_vet...                                          
+No issues found! (ran in 0.9s)
+
+Flutter tests:

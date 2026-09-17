@@ -6,3 +6,4 @@ python-multipart
 google-genai
 
 python-dotenv
+openai>=1.100.0

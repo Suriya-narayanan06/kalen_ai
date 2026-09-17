@@ -1,0 +1,299 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+FRONTEND="$ROOT/kalen_vet"
+BACKEND="$ROOT/backend"
+LOG="$ROOT/kalen-agent.log"
+REPORT="$ROOT/kalen-handover-report.txt"
+MAX_ROUNDS=12
+
+cd "$ROOT"
+
+exec > >(tee -a "$LOG") 2>&1
+
+echo "============================================================"
+echo "              KALEN AI AUTONOMOUS DEVELOPER"
+echo "============================================================"
+
+[[ -d "$BACKEND" ]] || { echo "ERROR: backend missing"; exit 1; }
+[[ -f "$FRONTEND/pubspec.yaml" ]] || {
+    echo "ERROR: kalen_vet is missing"
+    exit 1
+}
+
+# Never work on the obsolete duplicate frontend.
+export KALEN_ACTIVE_FRONTEND="$FRONTEND"
+export KALEN_PROTECTED_FRONTEND="$ROOT/kalen_flutter"
+
+mkdir -p .kalen/backups .kalen/reports
+
+echo "[1] Detecting AI coding engine..."
+
+AI_ENGINE=""
+
+if command -v codex >/dev/null 2>&1; then
+    AI_ENGINE="codex"
+elif command -v claude >/dev/null 2>&1; then
+    AI_ENGINE="claude"
+elif command -v gemini >/dev/null 2>&1; then
+    AI_ENGINE="gemini"
+fi
+
+if [[ -z "$AI_ENGINE" ]]; then
+    echo
+    echo "NO AI CODING CLI FOUND."
+    echo
+    echo "The terminal agent itself is installed, but autonomous code modification"
+    echo "requires an AI coding CLI available locally."
+    echo
+    echo "Detected commands:"
+    command -v codex || true
+    command -v claude || true
+    command -v gemini || true
+    echo
+    echo "No project files were modified."
+    exit 2
+fi
+
+echo "AI engine: $AI_ENGINE"
+
+echo
+echo "[2] Creating Git checkpoint..."
+
+CHECKPOINT="$(git rev-parse --short HEAD 2>/dev/null || echo none)"
+echo "Checkpoint: $CHECKPOINT"
+
+echo
+echo "[3] Repository inventory..."
+
+find backend -type f -name "*.py" | sort > .kalen/backend-files.txt
+find kalen_vet/lib -type f -name "*.dart" | sort > .kalen/flutter-files.txt
+
+echo "Backend files : $(wc -l < .kalen/backend-files.txt)"
+echo "Flutter files : $(wc -l < .kalen/flutter-files.txt)"
+
+echo
+echo "[4] Autonomous development loop"
+
+for ROUND in $(seq 1 "$MAX_ROUNDS"); do
+    echo
+    echo "============================================================"
+    echo "                 DEVELOPMENT ROUND $ROUND"
+    echo "============================================================"
+
+    cd "$ROOT"
+
+    rm -f .kalen/analyze.log .kalen/test.log .kalen/pycompile.log
+
+    echo "[A] Python validation..."
+    python3 -m compileall -q backend \
+        >.kalen/pycompile.log 2>&1 || true
+
+    echo "[B] Flutter dependencies..."
+    (
+        cd "$FRONTEND"
+        flutter pub get
+    )
+
+    echo "[C] Flutter analyzer..."
+    (
+        cd "$FRONTEND"
+        flutter analyze
+    ) >.kalen/analyze.log 2>&1 || true
+
+    echo "[D] Flutter tests..."
+    if [[ -d "$FRONTEND/test" ]]; then
+        (
+            cd "$FRONTEND"
+            flutter test
+        ) >.kalen/test.log 2>&1 || true
+    else
+        echo "No Flutter test directory." > .kalen/test.log
+    fi
+
+    echo "[E] Collecting current state..."
+
+    git status --short > .kalen/git-status.txt || true
+    git diff --stat > .kalen/diff-stat.txt || true
+
+    ERRORS="$(cat \
+        .kalen/pycompile.log \
+        .kalen/analyze.log \
+        .kalen/test.log \
+        2>/dev/null | \
+        grep -Ei \
+        'error|exception|failed|failure|undefined|not found|missing|invalid|timeout' \
+        | head -120 || true)"
+
+    if [[ -z "$ERRORS" ]]; then
+        echo
+        echo "No compiler/test errors detected."
+        break
+    fi
+
+    echo
+    echo "Problems detected:"
+    echo "$ERRORS"
+
+    echo
+    echo "[F] Asking AI coding engine to repair the repository..."
+
+    PROMPT="$(cat <<EOF
+You are the autonomous senior developer responsible for completing the KALEN AI repository.
+
+Repository:
+$ROOT
+
+ACTIVE FRONTEND:
+$FRONTEND
+
+BACKEND:
+$BACKEND
+
+PROTECTED DIRECTORY:
+$ROOT/kalen_flutter
+
+IMPORTANT:
+- Work directly on the existing repository.
+- The real Flutter project is kalen_vet.
+- NEVER modify, delete, restore, or migrate kalen_flutter.
+- Do not create another Flutter project.
+- Do not merely explain fixes.
+- Actually inspect and modify the source files.
+- Preserve working functionality.
+- Do not remove existing KALEN modules just to make tests pass.
+- Keep the architecture clean: Flutter -> API services -> FastAPI -> Kalen core/AI.
+- Use the existing ApiConfig/API infrastructure where appropriate.
+- Avoid hard-coded LAN IPs for production API access.
+- Implement missing pieces when they are clearly required.
+- Fix root causes rather than suppressing errors.
+- Do not fabricate external API credentials.
+- Do not claim a feature works if the required external service/permission is unavailable.
+- Add sensible error handling and loading states.
+- Keep Android/Desktop compatibility where practical.
+
+CURRENT VALIDATION ERRORS:
+$ERRORS
+
+Inspect the relevant source files and implement the fixes now.
+
+After modifying files, run the relevant local checks yourself.
+EOF
+)"
+
+    case "$AI_ENGINE" in
+        codex)
+            codex exec --full-auto "$PROMPT"
+            ;;
+        claude)
+            claude --dangerously-skip-permissions "$PROMPT"
+            ;;
+        gemini)
+            gemini -y "$PROMPT"
+            ;;
+    esac
+
+    echo
+    echo "[G] Post-repair validation..."
+
+    python3 -m compileall -q backend \
+        >.kalen/pycompile.log 2>&1 || true
+
+    (
+        cd "$FRONTEND"
+        flutter analyze
+    ) >.kalen/analyze.log 2>&1 || true
+
+    if grep -qE \
+        'No issues found!' \
+        .kalen/analyze.log 2>/dev/null && \
+       ! grep -qiE \
+        'error:|exception|failed|failure' \
+        .kalen/pycompile.log .kalen/analyze.log 2>/dev/null; then
+        echo "Round $ROUND validation: PASS"
+        break
+    fi
+
+    echo "Round $ROUND still has problems; continuing."
+done
+
+echo
+echo "============================================================"
+echo "                    FINAL VALIDATION"
+echo "============================================================"
+
+cd "$ROOT"
+
+python3 -m compileall -q backend
+
+cd "$FRONTEND"
+
+flutter pub get
+flutter analyze
+
+if [[ -d test ]]; then
+    flutter test
+fi
+
+echo
+echo "============================================================"
+echo "                    BUILD CHECK"
+echo "============================================================"
+
+flutter build apk --debug
+
+cd "$ROOT"
+
+cat > "$REPORT" <<EOF
+KALEN AI HANDOVER REPORT
+========================
+
+Generated: $(date)
+
+Repository:
+$ROOT
+
+Backend:
+$BACKEND
+
+Active Flutter frontend:
+$FRONTEND
+
+Protected duplicate:
+$ROOT/kalen_flutter
+
+AI coding engine:
+$AI_ENGINE
+
+Development rounds attempted:
+$MAX_ROUNDS
+
+Final Python compilation:
+PASS
+
+Final Flutter analyze:
+PASS
+
+Final Android debug APK:
+PASS
+
+Git status:
+$(git status --short)
+
+Diff summary:
+$(git diff --stat)
+EOF
+
+echo
+echo "============================================================"
+echo "             KALEN AUTONOMOUS DEVELOPMENT DONE"
+echo "============================================================"
+cat "$REPORT"
+echo
+echo "APK:"
+find "$FRONTEND/build/app/outputs/apk" -type f -name "*.apk" -print 2>/dev/null || true
+echo
+echo "Report: $REPORT"
+echo "Log   : $LOG"
+echo "============================================================"

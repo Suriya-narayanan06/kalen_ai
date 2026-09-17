@@ -1,0 +1,156 @@
+===== KALEN AI DEBUG BUNDLE =====
+Date: Thu Sep 17 08:32:16 PM IST 2026
+
+===== PROJECT =====
+/home/suriya/KALEN_AI
+
+===== GIT STATUS =====
+ M backend/api/vision.py
+ D kalen_flutter/.gitignore
+ D kalen_flutter/.metadata
+ D kalen_flutter/README.md
+ D kalen_flutter/analysis_options.yaml
+ D kalen_flutter/android/.gitignore
+ D kalen_flutter/android/app/build.gradle.kts
+ D kalen_flutter/android/app/src/debug/AndroidManifest.xml
+ D kalen_flutter/android/app/src/main/AndroidManifest.xml
+ D kalen_flutter/android/app/src/main/kotlin/com/example/kalen_flutter/MainActivity.kt
+ D kalen_flutter/android/app/src/main/res/drawable-v21/launch_background.xml
+ D kalen_flutter/android/app/src/main/res/drawable/launch_background.xml
+ D kalen_flutter/android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+ D kalen_flutter/android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+ D kalen_flutter/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+ D kalen_flutter/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+ D kalen_flutter/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+ D kalen_flutter/android/app/src/main/res/values-night/styles.xml
+ D kalen_flutter/android/app/src/main/res/values/styles.xml
+ D kalen_flutter/android/app/src/profile/AndroidManifest.xml
+ D kalen_flutter/android/build.gradle.kts
+ D kalen_flutter/android/gradle.properties
+ D kalen_flutter/android/gradle/wrapper/gradle-wrapper.properties
+ D kalen_flutter/android/settings.gradle.kts
+ D kalen_flutter/ios/.gitignore
+ D kalen_flutter/ios/Flutter/AppFrameworkInfo.plist
+ D kalen_flutter/ios/Flutter/Debug.xcconfig
+ D kalen_flutter/ios/Flutter/Release.xcconfig
+ D kalen_flutter/ios/Runner.xcodeproj/project.pbxproj
+ D kalen_flutter/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+ D kalen_flutter/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ D kalen_flutter/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+ D kalen_flutter/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
+ D kalen_flutter/ios/Runner.xcworkspace/contents.xcworkspacedata
+ D kalen_flutter/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ D kalen_flutter/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+ D kalen_flutter/ios/Runner/AppDelegate.swift
+ D kalen_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json
+ D kalen_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
+ D kalen_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png
+ D kalen_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png
+ D kalen_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png
+ D kalen_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png
+ D kalen_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png
+ D kalen_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png
+ D kalen_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png
+ D kalen_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png
+ D kalen_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png
+ D kalen_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png
+ D kalen_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png
+ D kalen_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png
+ D kalen_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png
+ D kalen_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png
+ D kalen_flutter/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json
+ D kalen_flutter/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png
+ D kalen_flutter/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png
+ D kalen_flutter/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png
+ D kalen_flutter/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md
+ D kalen_flutter/ios/Runner/Base.lproj/LaunchScreen.storyboard
+ D kalen_flutter/ios/Runner/Base.lproj/Main.storyboard
+ D kalen_flutter/ios/Runner/Info.plist
+ D kalen_flutter/ios/Runner/Runner-Bridging-Header.h
+ D kalen_flutter/ios/Runner/SceneDelegate.swift
+ D kalen_flutter/ios/RunnerTests/RunnerTests.swift
+ D kalen_flutter/lib/core/api/api_client.dart
+ D kalen_flutter/lib/core/constants/api_config.dart
+ D kalen_flutter/lib/main.dart
+ D kalen_flutter/lib/screens/chat/chat_screen.dart
+ D kalen_flutter/lib/screens/home/home_screen.dart
+ D kalen_flutter/linux/.gitignore
+ D kalen_flutter/linux/CMakeLists.txt
+ D kalen_flutter/linux/flutter/CMakeLists.txt
+ D kalen_flutter/linux/flutter/generated_plugin_registrant.cc
+ D kalen_flutter/linux/flutter/generated_plugin_registrant.h
+ D kalen_flutter/linux/flutter/generated_plugins.cmake
+ D kalen_flutter/linux/runner/CMakeLists.txt
+ D kalen_flutter/linux/runner/main.cc
+ D kalen_flutter/linux/runner/my_application.cc
+ D kalen_flutter/linux/runner/my_application.h
+ D kalen_flutter/macos/.gitignore
+ D kalen_flutter/macos/Flutter/Flutter-Debug.xcconfig
+ D kalen_flutter/macos/Flutter/Flutter-Release.xcconfig
+ D kalen_flutter/macos/Flutter/GeneratedPluginRegistrant.swift
+ D kalen_flutter/macos/Runner.xcodeproj/project.pbxproj
+ D kalen_flutter/macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ D kalen_flutter/macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
+ D kalen_flutter/macos/Runner.xcworkspace/contents.xcworkspacedata
+ D kalen_flutter/macos/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ D kalen_flutter/macos/Runner/AppDelegate.swift
+ D kalen_flutter/macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json
+ D kalen_flutter/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png
+ D kalen_flutter/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png
+ D kalen_flutter/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png
+ D kalen_flutter/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png
+ D kalen_flutter/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png
+ D kalen_flutter/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png
+ D kalen_flutter/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png
+ D kalen_flutter/macos/Runner/Base.lproj/MainMenu.xib
+ D kalen_flutter/macos/Runner/Configs/AppInfo.xcconfig
+ D kalen_flutter/macos/Runner/Configs/Debug.xcconfig
+ D kalen_flutter/macos/Runner/Configs/Release.xcconfig
+ D kalen_flutter/macos/Runner/Configs/Warnings.xcconfig
+ D kalen_flutter/macos/Runner/DebugProfile.entitlements
+ D kalen_flutter/macos/Runner/Info.plist
+ D kalen_flutter/macos/Runner/MainFlutterWindow.swift
+ D kalen_flutter/macos/Runner/Release.entitlements
+ D kalen_flutter/macos/RunnerTests/RunnerTests.swift
+ D kalen_flutter/pubspec.lock
+ D kalen_flutter/pubspec.yaml
+ D kalen_flutter/web/favicon.png
+ D kalen_flutter/web/icons/Icon-192.png
+ D kalen_flutter/web/icons/Icon-512.png
+ D kalen_flutter/web/icons/Icon-maskable-192.png
+ D kalen_flutter/web/icons/Icon-maskable-512.png
+ D kalen_flutter/web/index.html
+ D kalen_flutter/web/manifest.json
+ D kalen_flutter/windows/.gitignore
+ D kalen_flutter/windows/CMakeLists.txt
+ D kalen_flutter/windows/flutter/CMakeLists.txt
+ D kalen_flutter/windows/flutter/generated_plugin_registrant.cc
+ D kalen_flutter/windows/flutter/generated_plugin_registrant.h
+ D kalen_flutter/windows/flutter/generated_plugins.cmake
+ D kalen_flutter/windows/runner/CMakeLists.txt
+ D kalen_flutter/windows/runner/Runner.rc
+ D kalen_flutter/windows/runner/flutter_window.cpp
+ D kalen_flutter/windows/runner/flutter_window.h
+ D kalen_flutter/windows/runner/main.cpp
+ D kalen_flutter/windows/runner/resource.h
+ D kalen_flutter/windows/runner/resources/app_icon.ico
+ D kalen_flutter/windows/runner/runner.exe.manifest
+ D kalen_flutter/windows/runner/utils.cpp
+ D kalen_flutter/windows/runner/utils.h
+ D kalen_flutter/windows/runner/win32_window.cpp
+ D kalen_flutter/windows/runner/win32_window.h
+?? backend/ai/providers/deepseek_provider.py
+?? backend/ai/vision/
+?? backend/app/
+?? backend/memory/
+?? backend/requirements.txt
+?? debug_bundle.sh
+?? debug_bundle_20260917_203216.txt
+?? kalen_vet/
+?? lib/
+?? services/vision_service.py
+
+===== PYTHON =====
+Python 3.10.12
+
+===== FASTAPI / UVICORN =====

@@ -1,0 +1,110 @@
+import os
+import tempfile
+from pathlib import Path
+
+from fastapi import APIRouter, File, HTTPException, UploadFile
+from fastapi.responses import FileResponse
+
+from backend.services.voice_service import VoiceService
+
+
+router = APIRouter(
+    prefix="/voice",
+    tags=["Voice"],
+)
+
+
+SYSTEM_PROMPT = """
+You are KALEN, an intelligent multilingual AI assistant.
+
+Detect the language of the user's latest message automatically.
+
+Respond in the same language as the user unless the user explicitly
+requests another language.
+
+Do not translate the user's request unless translation was requested.
+
+Keep the response natural and conversational for voice output.
+Avoid unnecessary markdown, tables, code fences, or visual formatting
+when answering through voice.
+""".strip()
+
+
+@router.post("/transcribe")
+async def transcribe_voice(
+    audio: UploadFile = File(...)
+):
+    suffix = Path(audio.filename or ".wav").suffix or ".wav"
+
+    try:
+        with tempfile.NamedTemporaryFile(
+            delete=False,
+            suffix=suffix,
+        ) as temp:
+            data = await audio.read()
+            temp.write(data)
+            temp_path = temp.name
+
+        service = VoiceService()
+        result = service.transcribe(temp_path)
+
+        return {
+            "success": True,
+            "text": result["text"],
+            "language": result["language"],
+        }
+
+    except Exception as exc:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Speech-to-text failed: {exc}",
+        )
+
+    finally:
+        try:
+            os.unlink(temp_path)
+        except Exception:
+            pass
+
+
+@router.post("/tts")
+async def text_to_speech(payload: dict):
+    text = str(payload.get("text", "")).strip()
+
+    if not text:
+        raise HTTPException(
+            status_code=400,
+            detail="text is required",
+        )
+
+    output = tempfile.NamedTemporaryFile(
+        delete=False,
+        suffix=".mp3",
+    )
+    output.close()
+
+    try:
+        service = VoiceService()
+
+        service.synthesize(
+            text=text,
+            output_path=output.name,
+            voice=payload.get("voice"),
+        )
+
+        return FileResponse(
+            output.name,
+            media_type="audio/mpeg",
+            filename="kalen_response.mp3",
+        )
+
+    except Exception as exc:
+        try:
+            os.unlink(output.name)
+        except Exception:
+            pass
+
+        raise HTTPException(
+            status_code=500,
+            detail=f"Text-to-speech failed: {exc}",
+        )

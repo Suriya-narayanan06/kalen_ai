@@ -1,0 +1,147 @@
+import os
+import tempfile
+from pathlib import Path
+
+from fastapi import APIRouter, File, HTTPException, UploadFile
+from fastapi.responses import FileResponse
+
+from backend.services.voice_service import VoiceService
+
+
+router = APIRouter(
+    prefix="/voice",
+    tags=["Voice"],
+)
+
+
+@router.post("/transcribe")
+async def transcribe_voice(
+    audio: UploadFile = File(...)
+):
+    """
+    Convert uploaded speech audio into text.
+
+    The detected language is returned by the STT provider.
+    """
+
+    suffix = Path(
+        audio.filename or "audio.wav"
+    ).suffix or ".wav"
+
+    temp_path = None
+
+    try:
+        with tempfile.NamedTemporaryFile(
+            delete=False,
+            suffix=suffix,
+        ) as temp:
+
+            data = await audio.read()
+
+            if not data:
+                raise HTTPException(
+                    status_code=400,
+                    detail="Empty audio file.",
+                )
+
+            temp.write(data)
+            temp_path = temp.name
+
+        service = VoiceService()
+
+        result = service.transcribe(
+            temp_path
+        )
+
+        return {
+            "success": True,
+            "text": result.get("text", ""),
+            "language": result.get("language"),
+        }
+
+    except HTTPException:
+        raise
+
+    except Exception as exc:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Speech-to-text failed: {exc}",
+        )
+
+    finally:
+        if temp_path:
+            try:
+                os.unlink(temp_path)
+            except OSError:
+                pass
+
+
+@router.post("/tts")
+async def text_to_speech(
+    payload: dict
+):
+    """
+    Convert KALEN text response into MP3 audio.
+    """
+
+    text = str(
+        payload.get("text", "")
+    ).strip()
+
+    if not text:
+        raise HTTPException(
+            status_code=400,
+            detail="text is required",
+        )
+
+    voice = payload.get("voice")
+
+    output = tempfile.NamedTemporaryFile(
+        delete=False,
+        suffix=".mp3",
+    )
+
+    output_path = output.name
+    output.close()
+
+    try:
+        service = VoiceService()
+
+        service.synthesize(
+            text=text,
+            output_path=output_path,
+            voice=voice,
+        )
+
+        return FileResponse(
+            output_path,
+            media_type="audio/mpeg",
+            filename="kalen_response.mp3",
+        )
+
+    except Exception as exc:
+
+        try:
+            os.unlink(output_path)
+        except OSError:
+            pass
+
+        raise HTTPException(
+            status_code=500,
+            detail=f"Text-to-speech failed: {exc}",
+        )
+
+
+@router.get("/health")
+async def voice_health():
+    """
+    Lightweight voice module health endpoint.
+    Does not contact external AI services.
+    """
+
+    return {
+        "module": "voice",
+        "status": "online",
+        "stt": "configured",
+        "tts": "configured",
+    }
