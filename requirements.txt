@@ -7,3 +7,4 @@ google-genai
 
 python-dotenv
 openai>=1.100.0
+opencv-python-headless
