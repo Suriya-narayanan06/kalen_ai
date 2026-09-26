@@ -35,3 +35,8 @@ Thumbs.db
 
 __pycache__/
 *.pyc
+
+# KALEN Vision model weights
+backend/vision/models/*.weights
+backend/vision/models/yolov4.weights
+kalen_machine_vision_module/backend/vision/models/yolov4.weights

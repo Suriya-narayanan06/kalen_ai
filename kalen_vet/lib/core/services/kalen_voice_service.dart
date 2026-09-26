@@ -12,7 +12,7 @@ class KalenVoiceService {
           baseUrl ??
           const String.fromEnvironment(
             'KALEN_API_URL',
-            defaultValue: 'http://127.0.0.1:8000',
+            defaultValue: 'https://kalen-ai.onrender.com',
           );
 
   final String baseUrl;

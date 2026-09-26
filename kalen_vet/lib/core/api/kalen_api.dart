@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class KalenApi {
-  static const String baseUrl = 'http://10.214.233.228:8000';
+  static const String baseUrl = 'https://kalen-ai.onrender.com';
 
   static Future<String> sendMessage(String message) async {
     final response = await http.post(
