@@ -116,16 +116,46 @@ class VisionDetector:
         return DEFAULT_CLASSES
 
     def _load_model(self) -> None:
-        if not self.cfg or not self.weights:
-            return
-        if not Path(self.cfg).exists() or not Path(self.weights).exists():
+        cfg_path = Path(self.cfg)
+        weights_path = Path(self.weights)
+
+        print(f"[KALEN VISION] CFG: {cfg_path}")
+        print(f"[KALEN VISION] WEIGHTS: {weights_path}")
+        print(f"[KALEN VISION] CFG EXISTS: {cfg_path.exists()}")
+        print(f"[KALEN VISION] WEIGHTS EXISTS: {weights_path.exists()}")
+
+        if not cfg_path.exists():
+            print(f"[KALEN VISION] ERROR: YOLO cfg missing: {cfg_path}")
             return
 
-        self.net = cv2.dnn.readNetFromDarknet(self.cfg, self.weights)
-        self.net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
-        self.net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
-        self.real_model_loaded = True
-        print("[KALEN VISION] REAL YOLOv4 MODEL LOADED")
+        if not weights_path.exists():
+            print(f"[KALEN VISION] ERROR: YOLO weights missing: {weights_path}")
+            return
+
+        size = weights_path.stat().st_size
+        print(f"[KALEN VISION] YOLO weights size: {size} bytes")
+
+        if size < 200_000_000:
+            print("[KALEN VISION] ERROR: YOLO weights incomplete")
+            return
+
+        try:
+            self.net = cv2.dnn.readNetFromDarknet(
+                str(cfg_path),
+                str(weights_path),
+            )
+
+            self.net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
+            self.net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
+
+            self.real_model_loaded = True
+
+            print("[KALEN VISION] REAL YOLOv4 MODEL LOADED")
+
+        except Exception as exc:
+            self.net = None
+            self.real_model_loaded = False
+            print(f"[KALEN VISION] YOLO LOAD ERROR: {exc}")
 
     def detect(
         self,
