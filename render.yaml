@@ -12,5 +12,8 @@ services:
         value: backend/vision/models/yolov4.cfg
       - key: KALEN_YOLO_NAMES
         value: backend/vision/models/coco.names
+
+      - key: KALEN_YOLO_WEIGHTS_URL
+        value: https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights
       - key: KALEN_YOLO_WEIGHTS
         value: backend/vision/models/yolov4.weights

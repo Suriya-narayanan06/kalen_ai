@@ -1,4 +1,7 @@
 import os
+import urllib.request
+import time
+from pathlib import Path
 from pathlib import Path
 from typing import Any
 
@@ -23,6 +26,50 @@ DEFAULT_CLASSES = [
 ]
 
 
+
+
+YOLOV4_WEIGHTS_URL = os.getenv(
+    "KALEN_YOLO_WEIGHTS_URL",
+    "https://github.com/AlexeyAB/darknet/releases/download/"
+    "darknet_yolo_v3_optimal/yolov4.weights",
+)
+
+
+def _ensure_yolov4_weights(weights_path: str) -> bool:
+    """Ensure YOLOv4 weights exist before OpenCV loads the network."""
+    path = Path(weights_path)
+
+    if path.exists() and path.stat().st_size > 200_000_000:
+        return True
+
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+
+        tmp = path.with_suffix(".weights.download")
+
+        if tmp.exists():
+            tmp.unlink()
+
+        print("[KALEN VISION] Downloading YOLOv4 weights...")
+        urllib.request.urlretrieve(YOLOV4_WEIGHTS_URL, tmp)
+
+        if not tmp.exists() or tmp.stat().st_size < 200_000_000:
+            if tmp.exists():
+                tmp.unlink()
+            print("[KALEN VISION] Invalid YOLOv4 weights download.")
+            return False
+
+        tmp.replace(path)
+        print(
+            f"[KALEN VISION] YOLOv4 weights ready: "
+            f"{path.stat().st_size / 1024 / 1024:.1f} MB"
+        )
+        return True
+
+    except Exception as exc:
+        print(f"[KALEN VISION] Weight provisioning failed: {exc}")
+        return False
+
 class VisionDetector:
     """
     YOLOv4 adapter.
@@ -37,9 +84,9 @@ class VisionDetector:
     """
 
     def __init__(self) -> None:
-        self.cfg = os.getenv("KALEN_YOLO_CFG", "")
-        self.weights = os.getenv("KALEN_YOLO_WEIGHTS", "")
-        self.names = os.getenv("KALEN_YOLO_NAMES", "")
+        self.cfg = os.getenv("KALEN_YOLO_CFG") or str(Path(__file__).resolve().parent / "models" / "yolov4.cfg")
+        self.weights = os.getenv("KALEN_YOLO_WEIGHTS") or str(Path(__file__).resolve().parent / "models" / "yolov4.weights")
+        self.names = os.getenv("KALEN_YOLO_NAMES") or str(Path(__file__).resolve().parent / "models" / "coco.names")
         self.net = None
         self.classes = self._load_classes()
         self.model_name = "YOLOv4"
@@ -65,6 +112,7 @@ class VisionDetector:
         self.net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
         self.net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
         self.real_model_loaded = True
+        print("[KALEN VISION] REAL YOLOv4 MODEL LOADED")
 
     def detect(
         self,
