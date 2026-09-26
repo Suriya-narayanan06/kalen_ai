@@ -3,7 +3,8 @@ services:
     name: kalen-ai
     runtime: python
     buildCommand: >-
-      pip install -r requirements.txt && mkdir -p backend/vision/models && curl -L --fail --retry 3 "https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights" -o backend/vision/models/yolov4.weights
+      pip install -r requirements.txt && mkdir -p backend/vision/models && curl -L --fail --retry 3 "https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights" -o backend/vision/models/yolov4.weights && python3 -c "import cv2; from pathlib import Path; c=Path('backend/vision/models/yolov4.cfg'); w=Path('backend/vision/models/yolov4.weights'); assert c.exists(), f'Missing {c}'; assert w.exists(), f'Missing {w}'; assert w.stat().st_size > 200000000, 'YOLO weights incomplete'; cv2.dnn.readNetFromDarknet(str(c),str(w)); print('KALEN YOLOv4 BUILD VALIDATION: SUCCESS')"
+
       pip install -r requirements.txt
     startCommand: |
       uvicorn backend.main:app --host 0.0.0.0 --port $PORT
