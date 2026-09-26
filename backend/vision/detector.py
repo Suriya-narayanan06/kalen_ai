@@ -84,9 +84,22 @@ class VisionDetector:
     """
 
     def __init__(self) -> None:
-        self.cfg = os.getenv("KALEN_YOLO_CFG") or str(Path(__file__).resolve().parent / "models" / "yolov4.cfg")
-        self.weights = os.getenv("KALEN_YOLO_WEIGHTS") or str(Path(__file__).resolve().parent / "models" / "yolov4.weights")
-        self.names = os.getenv("KALEN_YOLO_NAMES") or str(Path(__file__).resolve().parent / "models" / "coco.names")
+        model_dir = Path(__file__).resolve().parent / "models"
+
+        self.cfg = os.getenv("KALEN_YOLO_CFG") or str(model_dir / "yolov4.cfg")
+        self.weights = os.getenv("KALEN_YOLO_WEIGHTS") or str(model_dir / "yolov4.weights")
+        self.names = os.getenv("KALEN_YOLO_NAMES") or str(model_dir / "coco.names")
+
+        # Render-safe runtime provisioning.
+        # Never commits the 245 MB weights file to Git.
+        if not Path(self.weights).exists():
+            weights_url = os.getenv("KALEN_YOLO_WEIGHTS_URL", "")
+            if weights_url:
+                Path(self.weights).parent.mkdir(parents=True, exist_ok=True)
+                print("KALEN: downloading YOLOv4 weights...")
+                urllib.request.urlretrieve(weights_url, self.weights)
+                print("KALEN: YOLOv4 weights downloaded:",
+                      Path(self.weights).stat().st_size, "bytes")
         self.net = None
         self.classes = self._load_classes()
         self.model_name = "YOLOv4"
